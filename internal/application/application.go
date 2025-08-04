@@ -6,6 +6,9 @@ import (
 	"sync"
 
 	"go.uber.org/zap"
+	"seller-pages-wb/internal/api"
+	"seller-pages-wb/internal/service"
+	"seller-pages-wb/pkg/runner"
 
 	"seller-pages-wb/internal/config"
 )
@@ -13,7 +16,8 @@ import (
 type Application struct {
 	cfg *config.Config
 
-	logger *zap.SugaredLogger
+	productService *service.ProductService
+	logger         *zap.SugaredLogger
 
 	errChan chan error
 	wg      sync.WaitGroup
@@ -28,6 +32,14 @@ func New() *Application {
 
 func (a *Application) Start(ctx context.Context) error {
 	if err := a.initConfigAndLogger(ctx); err != nil {
+		return err
+	}
+
+	if err := a.initServices(ctx); err != nil {
+		return err
+	}
+
+	if err := a.initRouter(ctx); err != nil {
 		return err
 	}
 
@@ -122,6 +134,25 @@ func (a *Application) initLogger() error {
 	}
 
 	a.logger = zapLog.Sugar()
+
+	return nil
+}
+
+func (a *Application) initServices(ctx context.Context) error {
+	a.productService = service.NewProductService()
+	return nil
+}
+
+func (a *Application) initRouter(ctx context.Context) error {
+	router := api.NewRouter(
+		a.cfg.ServerOpts,
+		a.productService,
+		a.logger,
+	)
+
+	if err := runner.RunServer(ctx, router, a.cfg.ListenPort, a.errChan, &a.wg); err != nil {
+		return fmt.Errorf("can't run public router: %w", err)
+	}
 
 	return nil
 }

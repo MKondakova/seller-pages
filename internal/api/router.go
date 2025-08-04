@@ -1,0 +1,138 @@
+package api
+
+import (
+	"encoding/json"
+	"errors"
+	"fmt"
+	"net/http"
+	"strconv"
+	"time"
+
+	"github.com/rs/cors"
+	"go.uber.org/zap"
+	"seller-pages-wb/internal/config"
+	"seller-pages-wb/internal/models"
+)
+
+var errInvalidPageNumber = errors.New("invalid page number")
+
+type ProductsService interface {
+	GetProductsList(page int) ([]models.ProductPreview, int)
+}
+
+type Router struct {
+	*http.Server
+	router *http.ServeMux
+
+	productsService ProductsService
+
+	logger *zap.SugaredLogger
+}
+
+func NewRouter(
+	cfg config.ServerOpts,
+	productsService ProductsService,
+	logger *zap.SugaredLogger,
+) *Router {
+	innerRouter := http.NewServeMux()
+
+	appRouter := &Router{
+		Server: &http.Server{
+			Handler:      cors.AllowAll().Handler(innerRouter),
+			ReadTimeout:  time.Duration(cfg.ReadTimeout) * time.Second,
+			WriteTimeout: time.Duration(cfg.WriteTimeout) * time.Second,
+			IdleTimeout:  time.Duration(cfg.IdleTimeout) * time.Second,
+		},
+		router:          innerRouter,
+		productsService: productsService,
+		logger:          logger,
+	}
+
+	innerRouter.HandleFunc("GET /api/products", appRouter.getProductsList)
+
+	return appRouter
+}
+
+func (r *Router) sendResponse(response http.ResponseWriter, request *http.Request, code int, buf []byte) {
+	response.Header().Set("Content-Type", "application/json")
+	response.WriteHeader(code)
+	_, err := response.Write(buf)
+	if err != nil {
+		r.logger.With(
+			"module", "api",
+			"request_url", request.Method+": "+request.URL.Path,
+		).Errorf("Error sending error response: %v", err)
+	}
+}
+
+func (r *Router) sendErrorResponse(response http.ResponseWriter, request *http.Request, err error) {
+	if errors.Is(err, ErrBadRequest) {
+		response.WriteHeader(http.StatusBadRequest)
+		r.logger.With(
+			"module", "api",
+			"request_url", request.Method+": "+request.URL.Path,
+		).Warn(err)
+		r.writeError(response, request, err)
+	}
+
+	response.WriteHeader(http.StatusInternalServerError)
+	r.logger.With(
+		"module", "api",
+		"request_url", request.Method+": "+request.URL.Path,
+	).Error(err)
+}
+
+func (r *Router) writeError(response http.ResponseWriter, request *http.Request, err error) {
+	_, err = response.Write([]byte(err.Error()))
+	if err != nil {
+		r.logger.With(
+			"module", "api",
+			"request_url", request.Method+": "+request.URL.Path,
+		).Errorf("Error sending error response: %v", err)
+	}
+}
+
+func (r *Router) getProductsList(response http.ResponseWriter, request *http.Request) {
+	page, err := getPage(request)
+	if err != nil {
+		r.sendErrorResponse(response, request, fmt.Errorf("%w: %w", ErrBadRequest, err))
+
+		return
+	}
+
+	result, totalPages := r.productsService.GetProductsList(page)
+
+	responseBody := PaginatedResponse[models.ProductPreview]{
+		TotalPages: totalPages,
+		Data:       result,
+		Page:       page,
+	}
+
+	buf, err := json.Marshal(responseBody)
+	if err != nil {
+		r.sendErrorResponse(response, request, fmt.Errorf("%w: %w", ErrInternalServer, err))
+
+		return
+	}
+
+	r.sendResponse(response, request, http.StatusOK, buf)
+}
+
+func getPage(request *http.Request) (int, error) {
+	pageParameter := request.URL.Query().Get("page")
+
+	if pageParameter == "" {
+		return 1, nil
+	}
+
+	page, err := strconv.Atoi(pageParameter)
+	if err != nil {
+		return 0, fmt.Errorf("%w: %w", errInvalidPageNumber, err)
+	}
+
+	if page <= 0 {
+		return 0, fmt.Errorf("%w: %d", errInvalidPageNumber, page)
+	}
+
+	return page, nil
+}
