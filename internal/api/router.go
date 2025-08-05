@@ -14,10 +14,14 @@ import (
 	"seller-pages-wb/internal/models"
 )
 
-var errInvalidPageNumber = errors.New("invalid page number")
+var (
+	errInvalidPageNumber = errors.New("invalid page number")
+	errEmptyID           = errors.New("empty id")
+)
 
 type ProductsService interface {
 	GetProductsList(page int) ([]models.ProductPreview, int)
+	GetProductsByID(id string) (models.ProductPageInfo, error)
 }
 
 type Router struct {
@@ -49,6 +53,7 @@ func NewRouter(
 	}
 
 	innerRouter.HandleFunc("GET /api/products", appRouter.getProductsList)
+	innerRouter.HandleFunc("GET /api/products/{id}", appRouter.getProductByID)
 
 	return appRouter
 }
@@ -66,13 +71,19 @@ func (r *Router) sendResponse(response http.ResponseWriter, request *http.Reques
 }
 
 func (r *Router) sendErrorResponse(response http.ResponseWriter, request *http.Request, err error) {
-	if errors.Is(err, ErrBadRequest) {
+	if errors.Is(err, models.ErrBadRequest) {
 		response.WriteHeader(http.StatusBadRequest)
 		r.logger.With(
 			"module", "api",
 			"request_url", request.Method+": "+request.URL.Path,
 		).Warn(err)
 		r.writeError(response, request, err)
+	} else if errors.Is(err, models.ErrNotFound) {
+		response.WriteHeader(http.StatusNotFound)
+		r.logger.With(
+			"module", "api",
+			"request_url", request.Method+": "+request.URL.Path,
+		).Warn(err)
 	}
 
 	response.WriteHeader(http.StatusInternalServerError)
@@ -92,10 +103,10 @@ func (r *Router) writeError(response http.ResponseWriter, request *http.Request,
 	}
 }
 
-func (r *Router) getProductsList(response http.ResponseWriter, request *http.Request) {
+func (r *Router) getProductsList(writer http.ResponseWriter, request *http.Request) {
 	page, err := getPage(request)
 	if err != nil {
-		r.sendErrorResponse(response, request, fmt.Errorf("%w: %w", ErrBadRequest, err))
+		r.sendErrorResponse(writer, request, fmt.Errorf("%w: %w", models.ErrBadRequest, err))
 
 		return
 	}
@@ -110,12 +121,37 @@ func (r *Router) getProductsList(response http.ResponseWriter, request *http.Req
 
 	buf, err := json.Marshal(responseBody)
 	if err != nil {
-		r.sendErrorResponse(response, request, fmt.Errorf("%w: %w", ErrInternalServer, err))
+		r.sendErrorResponse(writer, request, fmt.Errorf("%w: %w", models.ErrInternalServer, err))
 
 		return
 	}
 
-	r.sendResponse(response, request, http.StatusOK, buf)
+	r.sendResponse(writer, request, http.StatusOK, buf)
+}
+
+func (r *Router) getProductByID(writer http.ResponseWriter, request *http.Request) {
+	id := request.PathValue("id")
+	if id == "" {
+		r.sendErrorResponse(writer, request, fmt.Errorf("%w: %w", models.ErrBadRequest, errEmptyID))
+
+		return
+	}
+
+	product, err := r.productsService.GetProductsByID(id)
+	if err != nil {
+		r.sendErrorResponse(writer, request, fmt.Errorf("GetProductsByID: %w", err))
+
+		return
+	}
+
+	buf, err := json.Marshal(product)
+	if err != nil {
+		r.sendErrorResponse(writer, request, fmt.Errorf("%w: %w", models.ErrInternalServer, err))
+
+		return
+	}
+
+	r.sendResponse(writer, request, http.StatusOK, buf)
 }
 
 func getPage(request *http.Request) (int, error) {

@@ -1,15 +1,15 @@
 package config
 
 type Config struct {
-	SystemPort string `json:"system_port"`
-	ListenPort string `json:"listen_port"`
+	ListenPort string
 
-	ServerOpts ServerOpts `json:"server_opts"`
+	ServerOpts    ServerOpts
+	ProductsPath  string
+	FeedbacksPath string
 }
 
-func ParseConfig() (*Config, error) {
+func GetConfig() (*Config, error) {
 	return &Config{
-		SystemPort: ":8081",
 		ListenPort: ":8080",
 		ServerOpts: ServerOpts{
 			ReadTimeout:          60,
@@ -17,11 +17,8 @@ func ParseConfig() (*Config, error) {
 			IdleTimeout:          60,
 			MaxRequestBodySizeMb: 1,
 		},
+		ProductsPath: "data/enriched_products.json",
 	}, nil
-}
-
-func (c *Config) Validate() error {
-	return nil
 }
 
 type ServerOpts struct {

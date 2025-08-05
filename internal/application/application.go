@@ -115,13 +115,9 @@ func (a *Application) initConfigAndLogger(ctx context.Context) error {
 func (a *Application) initConfig() error {
 	var err error
 
-	a.cfg, err = config.ParseConfig()
+	a.cfg, err = config.GetConfig()
 	if err != nil {
 		return fmt.Errorf("can't parse config: %w", err)
-	}
-
-	if err = a.cfg.Validate(); err != nil {
-		return fmt.Errorf("validate config: %w", err)
 	}
 
 	return nil
@@ -139,7 +135,13 @@ func (a *Application) initLogger() error {
 }
 
 func (a *Application) initServices(ctx context.Context) error {
-	a.productService = service.NewProductService()
+	var err error
+
+	a.productService, err = service.NewProductService(a.cfg.ProductsPath)
+	if err != nil {
+		return fmt.Errorf("can't create product service: %w", err)
+	}
+
 	return nil
 }
 
