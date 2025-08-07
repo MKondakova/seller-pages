@@ -75,8 +75,8 @@ type BalanceInfo struct {
 	TotalRefundsCount   int          `json:"totalRefundsCount"`
 	SalesChart          SaleChartDTO `json:"salesChart"`
 	TotalRefundsPercent float32      `json:"totalRefundsPercent"`
-	MonthlyRatingGrow   *float32     `json:"monthlyRatingGrow,omitempty"`
-	MonthlySalesGrow    *int         `json:"monthlySalesGrow,omitempty"`
+	MonthlyRatingGrow   float32      `json:"monthlyRatingGrow,omitempty"`
+	MonthlySalesGrow    int          `json:"monthlySalesGrow,omitempty"`
 }
 
 type SaleChartDTO struct {

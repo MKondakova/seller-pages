@@ -24,11 +24,16 @@ type ProductsService interface {
 	GetProductsByID(id string) (models.ProductPageInfo, error)
 }
 
+type BalanceService interface {
+	GetBalanceInfo() models.BalanceInfo
+}
+
 type Router struct {
 	*http.Server
 	router *http.ServeMux
 
 	productsService ProductsService
+	balanceService  BalanceService
 
 	logger *zap.SugaredLogger
 }
@@ -36,6 +41,7 @@ type Router struct {
 func NewRouter(
 	cfg config.ServerOpts,
 	productsService ProductsService,
+	balanceService BalanceService,
 	logger *zap.SugaredLogger,
 ) *Router {
 	innerRouter := http.NewServeMux()
@@ -49,11 +55,13 @@ func NewRouter(
 		},
 		router:          innerRouter,
 		productsService: productsService,
+		balanceService:  balanceService,
 		logger:          logger,
 	}
 
 	innerRouter.HandleFunc("GET /api/products", appRouter.getProductsList)
 	innerRouter.HandleFunc("GET /api/products/{id}", appRouter.getProductByID)
+	innerRouter.HandleFunc("GET /api/balanceInfo", appRouter.getBalanceInfo)
 
 	return appRouter
 }
@@ -78,12 +86,20 @@ func (r *Router) sendErrorResponse(response http.ResponseWriter, request *http.R
 			"request_url", request.Method+": "+request.URL.Path,
 		).Warn(err)
 		r.writeError(response, request, err)
-	} else if errors.Is(err, models.ErrNotFound) {
+
+		return
+	}
+
+	if errors.Is(err, models.ErrNotFound) {
 		response.WriteHeader(http.StatusNotFound)
 		r.logger.With(
 			"module", "api",
 			"request_url", request.Method+": "+request.URL.Path,
 		).Warn(err)
+
+		r.writeError(response, request, err)
+
+		return
 	}
 
 	response.WriteHeader(http.StatusInternalServerError)
@@ -152,6 +168,20 @@ func (r *Router) getProductByID(writer http.ResponseWriter, request *http.Reques
 	}
 
 	r.sendResponse(writer, request, http.StatusOK, buf)
+}
+
+func (r *Router) getBalanceInfo(writer http.ResponseWriter, request *http.Request) {
+	responseBody := r.balanceService.GetBalanceInfo()
+
+	buf, err := json.Marshal(responseBody)
+	if err != nil {
+		r.sendErrorResponse(writer, request, fmt.Errorf("%w: %w", models.ErrInternalServer, err))
+
+		return
+	}
+
+	r.sendResponse(writer, request, http.StatusOK, buf)
+
 }
 
 func getPage(request *http.Request) (int, error) {

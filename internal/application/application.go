@@ -17,6 +17,7 @@ type Application struct {
 	cfg *config.Config
 
 	productService *service.ProductService
+	balanceService *service.BalanceService
 	logger         *zap.SugaredLogger
 
 	errChan chan error
@@ -142,6 +143,8 @@ func (a *Application) initServices(ctx context.Context) error {
 		return fmt.Errorf("can't create product service: %w", err)
 	}
 
+	a.balanceService = service.NewBalanceService()
+
 	return nil
 }
 
@@ -149,6 +152,7 @@ func (a *Application) initRouter(ctx context.Context) error {
 	router := api.NewRouter(
 		a.cfg.ServerOpts,
 		a.productService,
+		a.balanceService,
 		a.logger,
 	)
 
