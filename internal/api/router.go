@@ -21,7 +21,9 @@ var (
 
 type ProductsService interface {
 	GetProductsList(page int) ([]models.ProductPreview, int)
-	GetProductsByID(id string) (models.ProductPageInfo, error)
+	GetProductByID(id string) (models.ProductPageInfo, error)
+	AddProduct() models.ProductPreview
+	DeleteProductByID(productID string) error
 }
 
 type BalanceService interface {
@@ -59,8 +61,12 @@ func NewRouter(
 		logger:          logger,
 	}
 
+	innerRouter.HandleFunc("POST /api/products/generate", appRouter.addProduct)
 	innerRouter.HandleFunc("GET /api/products", appRouter.getProductsList)
+
 	innerRouter.HandleFunc("GET /api/products/{id}", appRouter.getProductByID)
+	innerRouter.HandleFunc("DELETE /api/products/{id}", appRouter.deleteProductByID)
+
 	innerRouter.HandleFunc("GET /api/balanceInfo", appRouter.getBalanceInfo)
 
 	return appRouter
@@ -153,9 +159,9 @@ func (r *Router) getProductByID(writer http.ResponseWriter, request *http.Reques
 		return
 	}
 
-	product, err := r.productsService.GetProductsByID(id)
+	product, err := r.productsService.GetProductByID(id)
 	if err != nil {
-		r.sendErrorResponse(writer, request, fmt.Errorf("GetProductsByID: %w", err))
+		r.sendErrorResponse(writer, request, fmt.Errorf("GetProductByID: %w", err))
 
 		return
 	}
@@ -182,6 +188,37 @@ func (r *Router) getBalanceInfo(writer http.ResponseWriter, request *http.Reques
 
 	r.sendResponse(writer, request, http.StatusOK, buf)
 
+}
+
+func (r *Router) addProduct(writer http.ResponseWriter, request *http.Request) {
+	responseBody := r.productsService.AddProduct()
+
+	buf, err := json.Marshal(responseBody)
+	if err != nil {
+		r.sendErrorResponse(writer, request, fmt.Errorf("%w: %w", models.ErrInternalServer, err))
+
+		return
+	}
+
+	r.sendResponse(writer, request, http.StatusOK, buf)
+}
+
+func (r *Router) deleteProductByID(writer http.ResponseWriter, request *http.Request) {
+	id := request.PathValue("id")
+	if id == "" {
+		r.sendErrorResponse(writer, request, fmt.Errorf("%w: %w", models.ErrBadRequest, errEmptyID))
+
+		return
+	}
+
+	err := r.productsService.DeleteProductByID(id)
+	if err != nil {
+		r.sendErrorResponse(writer, request, fmt.Errorf("GetProductByID: %w", err))
+
+		return
+	}
+
+	writer.WriteHeader(http.StatusNoContent)
 }
 
 func getPage(request *http.Request) (int, error) {
