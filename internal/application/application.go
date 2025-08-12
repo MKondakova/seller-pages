@@ -101,7 +101,7 @@ func (a *Application) HandleGracefulShutdown(ctx context.Context, cancel context
 	return appErr
 }
 
-func (a *Application) initConfigAndLogger(ctx context.Context) error {
+func (a *Application) initConfigAndLogger() error {
 	if err := a.initConfig(); err != nil {
 		return fmt.Errorf("can't init config: %w", err)
 	}
@@ -135,7 +135,7 @@ func (a *Application) initLogger() error {
 	return nil
 }
 
-func (a *Application) initServices(ctx context.Context) error {
+func (a *Application) initServices() error {
 	var err error
 
 	a.productService, err = service.NewProductService(a.cfg.ProductsPath)
@@ -149,10 +149,13 @@ func (a *Application) initServices(ctx context.Context) error {
 }
 
 func (a *Application) initRouter(ctx context.Context) error {
+	authMiddleware := api.NewAuthMiddleware(a.cfg.PublicKey, a.logger, a.cfg.RevokedTokens).JWTAuth
+
 	router := api.NewRouter(
 		a.cfg.ServerOpts,
 		a.productService,
 		a.balanceService,
+		authMiddleware,
 		a.logger,
 	)
 
