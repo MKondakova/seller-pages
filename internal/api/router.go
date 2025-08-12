@@ -44,13 +44,14 @@ func NewRouter(
 	cfg config.ServerOpts,
 	productsService ProductsService,
 	balanceService BalanceService,
+	authMiddleware func(next http.Handler) http.Handler,
 	logger *zap.SugaredLogger,
 ) *Router {
 	innerRouter := http.NewServeMux()
 
 	appRouter := &Router{
 		Server: &http.Server{
-			Handler:      cors.AllowAll().Handler(innerRouter),
+			Handler:      cors.AllowAll().Handler(authMiddleware(innerRouter)),
 			ReadTimeout:  time.Duration(cfg.ReadTimeout) * time.Second,
 			WriteTimeout: time.Duration(cfg.WriteTimeout) * time.Second,
 			IdleTimeout:  time.Duration(cfg.IdleTimeout) * time.Second,

@@ -3,6 +3,8 @@ module seller-pages-wb
 go 1.24
 
 require (
+	github.com/caarlos0/env/v11 v11.3.1
+	github.com/golang-jwt/jwt/v5 v5.3.0
 	github.com/google/uuid v1.6.0
 	github.com/rs/cors v1.11.1
 	github.com/stretchr/testify v1.9.0
