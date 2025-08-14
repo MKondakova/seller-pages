@@ -11,9 +11,8 @@ import (
 
 	"github.com/golang-jwt/jwt/v5"
 	"go.uber.org/zap"
+	"seller-pages-wb/internal/models"
 )
-
-type contextClaimsKey struct{}
 
 var (
 	errNicknameIsEmpty      = errors.New("nickname is empty")
@@ -21,13 +20,6 @@ var (
 	errForbidden            = errors.New("forbidden")
 	errInvalidSigningMethod = errors.New("invalid signing method")
 )
-
-type Claims struct {
-	*jwt.RegisteredClaims
-
-	Nickname  string `json:"nickname"`
-	IsTeacher bool   `json:"isTeacher"`
-}
 
 type AuthMiddleware struct {
 	publicKey *rsa.PublicKey
@@ -95,17 +87,11 @@ func (m *AuthMiddleware) payload(request *http.Request) string {
 	return ""
 }
 
-func ContextWithClaims(ctx context.Context, claims *Claims) context.Context {
-	return context.WithValue(ctx, contextClaimsKey{}, claims)
+func ContextWithClaims(ctx context.Context, claims *models.AuthTokenClaims) context.Context {
+	return context.WithValue(ctx, models.ContextClaimsKey{}, claims)
 }
 
-func ClaimsFromContext(ctx context.Context) *Claims {
-	claims, _ := ctx.Value(contextClaimsKey{}).(*Claims)
-
-	return claims
-}
-
-func (m *AuthMiddleware) Check(serviceJWT, requestedMethod string) (*Claims, error) {
+func (m *AuthMiddleware) Check(serviceJWT, requestedMethod string) (*models.AuthTokenClaims, error) {
 	jwtAuthPrefix := "Bearer "
 
 	if !strings.HasPrefix(serviceJWT, jwtAuthPrefix) {
@@ -148,10 +134,10 @@ func (m *AuthMiddleware) isRevoked(id string) bool {
 	return has
 }
 
-func (m *AuthMiddleware) parse(token string) (*Claims, error) {
+func (m *AuthMiddleware) parse(token string) (*models.AuthTokenClaims, error) {
 	parser := jwt.NewParser()
 
-	var claims Claims
+	var claims models.AuthTokenClaims
 
 	_, err := parser.ParseWithClaims(token, &claims, func(t *jwt.Token) (any, error) {
 		if _, ok := t.Method.(*jwt.SigningMethodRSA); !ok {
@@ -172,7 +158,7 @@ func (m *AuthMiddleware) parse(token string) (*Claims, error) {
 	return &claims, nil
 }
 
-func (m *AuthMiddleware) validate(claims *Claims) error {
+func (m *AuthMiddleware) validate(claims *models.AuthTokenClaims) error {
 	if claims.Nickname == "" {
 		return errNicknameIsEmpty
 	}

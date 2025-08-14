@@ -8,6 +8,7 @@ import (
 	"errors"
 	"fmt"
 	"reflect"
+	"strings"
 
 	"github.com/caarlos0/env/v11"
 	"github.com/golang-jwt/jwt/v5"
@@ -22,13 +23,14 @@ type Config struct {
 	ListenPort string
 
 	PublicKey  *rsa.PublicKey  `env:"PUBLIC_KEY,notEmpty"`
-	PrivateKey *rsa.PrivateKey `env:"PRIVATE_KEY"`
+	PrivateKey *rsa.PrivateKey `env:"PRIVATE_KEY,notEmpty"`
 
 	RevokedTokens []string
 
-	ServerOpts    ServerOpts
-	ProductsPath  string
-	FeedbacksPath string
+	ServerOpts        ServerOpts
+	ProductsPath      string
+	FeedbacksPath     string
+	CreatedTokensPath string
 }
 
 func GetConfig() (*Config, error) {
@@ -40,8 +42,9 @@ func GetConfig() (*Config, error) {
 			IdleTimeout:          60,
 			MaxRequestBodySizeMb: 1,
 		},
-		ProductsPath:  "data/enriched_products.json",
-		RevokedTokens: []string{},
+		ProductsPath:      "data/enriched_products.json",
+		CreatedTokensPath: "data/created_tokens.json",
+		RevokedTokens:     []string{},
 	}
 
 	opts := env.Options{
@@ -67,8 +70,8 @@ type ServerOpts struct {
 }
 
 // ParsePubKey public keys loader for github.com/caarlos0/env/v11 lib.
-func ParsePubKey(val string) (any, error) {
-	publicKey, err := hex.DecodeString(val)
+func ParsePubKey(value string) (any, error) {
+	publicKey, err := hex.DecodeString(value)
 	if err != nil {
 		return nil, fmt.Errorf("hex.DecodeString: %w", err)
 	}
@@ -83,7 +86,7 @@ func ParsePubKey(val string) (any, error) {
 
 // ParsePrivateKey pkcs1 private keys loader for github.com/caarlos0/env/v11 lib.
 func ParsePrivateKey(value string) (any, error) {
-	decoded, err := hex.DecodeString(value)
+	decoded, err := hex.DecodeString(strings.TrimSpace(value))
 	if err != nil {
 		return nil, fmt.Errorf("hex.DecodeString: %w", err)
 	}
@@ -93,7 +96,7 @@ func ParsePrivateKey(value string) (any, error) {
 		return nil, errDecodePem
 	}
 
-	key, err := jwt.ParseRSAPrivateKeyFromPEM(block.Bytes)
+	key, err := jwt.ParseRSAPrivateKeyFromPEM(decoded)
 	if err != nil {
 		return nil, fmt.Errorf("jwt.ParseRSAPrivateKeyFromPEM: %w", err)
 	}

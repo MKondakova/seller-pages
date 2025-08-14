@@ -1,6 +1,7 @@
 package api
 
 import (
+	"context"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -17,6 +18,7 @@ import (
 var (
 	errInvalidPageNumber = errors.New("invalid page number")
 	errEmptyID           = errors.New("empty id")
+	errEmptyName         = errors.New("empty name")
 )
 
 type ProductsService interface {
@@ -30,12 +32,17 @@ type BalanceService interface {
 	GetBalanceInfo() models.BalanceInfo
 }
 
+type TokenService interface {
+	GenerateToken(ctx context.Context, username string, isTeacher bool) (string, error)
+}
+
 type Router struct {
 	*http.Server
 	router *http.ServeMux
 
 	productsService ProductsService
 	balanceService  BalanceService
+	tokenService    TokenService
 
 	logger *zap.SugaredLogger
 }
@@ -44,6 +51,7 @@ func NewRouter(
 	cfg config.ServerOpts,
 	productsService ProductsService,
 	balanceService BalanceService,
+	tokenService TokenService,
 	authMiddleware func(next http.Handler) http.Handler,
 	logger *zap.SugaredLogger,
 ) *Router {
@@ -59,6 +67,7 @@ func NewRouter(
 		router:          innerRouter,
 		productsService: productsService,
 		balanceService:  balanceService,
+		tokenService:    tokenService,
 		logger:          logger,
 	}
 
@@ -69,6 +78,9 @@ func NewRouter(
 	innerRouter.HandleFunc("DELETE /api/products/{id}", appRouter.deleteProductByID)
 
 	innerRouter.HandleFunc("GET /api/balanceInfo", appRouter.getBalanceInfo)
+
+	innerRouter.HandleFunc("POST /api/createToken", appRouter.createToken)
+	innerRouter.HandleFunc("POST /api/createTeacherToken", appRouter.createTeacherToken)
 
 	return appRouter
 }
@@ -220,6 +232,42 @@ func (r *Router) deleteProductByID(writer http.ResponseWriter, request *http.Req
 	}
 
 	writer.WriteHeader(http.StatusNoContent)
+}
+
+func (r *Router) createToken(writer http.ResponseWriter, request *http.Request) {
+	name := request.URL.Query().Get("name")
+	if name == "" {
+		r.sendErrorResponse(writer, request, fmt.Errorf("%w: %w", models.ErrBadRequest, errEmptyName))
+
+		return
+	}
+
+	token, err := r.tokenService.GenerateToken(request.Context(), name, false)
+	if err != nil {
+		r.sendErrorResponse(writer, request, fmt.Errorf("CreateToken: %w", err))
+
+		return
+	}
+
+	r.sendResponse(writer, request, http.StatusOK, []byte(token))
+}
+
+func (r *Router) createTeacherToken(writer http.ResponseWriter, request *http.Request) {
+	name := request.URL.Query().Get("name")
+	if name == "" {
+		r.sendErrorResponse(writer, request, fmt.Errorf("%w: %w", models.ErrBadRequest, errEmptyName))
+
+		return
+	}
+
+	token, err := r.tokenService.GenerateToken(request.Context(), name, true)
+	if err != nil {
+		r.sendErrorResponse(writer, request, fmt.Errorf("CreateToken: %w", err))
+
+		return
+	}
+
+	r.sendResponse(writer, request, http.StatusOK, []byte(token))
 }
 
 func getPage(request *http.Request) (int, error) {

@@ -18,6 +18,7 @@ type Application struct {
 
 	productService *service.ProductService
 	balanceService *service.BalanceService
+	tokenService   *service.TokenService
 	logger         *zap.SugaredLogger
 
 	errChan chan error
@@ -144,6 +145,7 @@ func (a *Application) initServices() error {
 	}
 
 	a.balanceService = service.NewBalanceService()
+	a.tokenService = service.NewTokenService(a.cfg.PrivateKey, a.cfg.CreatedTokensPath)
 
 	return nil
 }
@@ -155,6 +157,7 @@ func (a *Application) initRouter(ctx context.Context) error {
 		a.cfg.ServerOpts,
 		a.productService,
 		a.balanceService,
+		a.tokenService,
 		authMiddleware,
 		a.logger,
 	)

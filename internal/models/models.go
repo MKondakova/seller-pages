@@ -1,5 +1,11 @@
 package models
 
+import (
+	"context"
+
+	"github.com/golang-jwt/jwt/v5"
+)
+
 type Product struct {
 	ID                string  `json:"id"`
 	Name              string  `json:"name"`
@@ -87,4 +93,19 @@ type SaleChartDTO struct {
 type SalePoint struct {
 	Amount float64 `json:"amount"`
 	Period string  `json:"period"`
+}
+
+type AuthTokenClaims struct {
+	*jwt.RegisteredClaims
+
+	Nickname  string `json:"nickname"`
+	IsTeacher bool   `json:"isTeacher"`
+}
+
+type ContextClaimsKey struct{}
+
+func ClaimsFromContext(ctx context.Context) *AuthTokenClaims {
+	claims, _ := ctx.Value(ContextClaimsKey{}).(*AuthTokenClaims)
+
+	return claims
 }
