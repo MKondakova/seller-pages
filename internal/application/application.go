@@ -16,10 +16,11 @@ import (
 type Application struct {
 	cfg *config.Config
 
-	productService *service.ProductService
-	balanceService *service.BalanceService
-	tokenService   *service.TokenService
-	logger         *zap.SugaredLogger
+	productService  *service.ProductService
+	balanceService  *service.BalanceService
+	tokenService    *service.TokenService
+	feedbackService *service.FeedbackService
+	logger          *zap.SugaredLogger
 
 	errChan chan error
 	wg      sync.WaitGroup
@@ -139,7 +140,11 @@ func (a *Application) initLogger() error {
 func (a *Application) initServices() error {
 	var err error
 
-	a.productService, err = service.NewProductService(a.cfg.ProductsPath)
+	a.feedbackService, err = service.NewFeedbackService("data/feedbacks.json", "data/feedbacksPerProduct.json")
+	if err != nil {
+		return fmt.Errorf("can't create feedback service: %w", err)
+	}
+	a.productService, err = service.NewProductService(a.cfg.ProductsPath, a.feedbackService)
 	if err != nil {
 		return fmt.Errorf("can't create product service: %w", err)
 	}

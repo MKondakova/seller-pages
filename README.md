@@ -19,5 +19,5 @@
     
     docker rm -f seller-pages-app 
    
-    docker run --env-file ./.env --restart always -p 80:8080 -d --name seller-pages-app seller-pages-image:latest
+    docker run --env-file ./.env -v "data:/root/data" --restart always -p 80:8080 -d --name seller-pages-app seller-pages-image:latest
    ```

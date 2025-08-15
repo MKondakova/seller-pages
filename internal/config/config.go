@@ -42,7 +42,7 @@ func GetConfig() (*Config, error) {
 			IdleTimeout:          60,
 			MaxRequestBodySizeMb: 1,
 		},
-		ProductsPath:      "data/enriched_products.json",
+		ProductsPath:      "data/products.json",
 		CreatedTokensPath: "data/created_tokens.json",
 		RevokedTokens:     []string{},
 	}

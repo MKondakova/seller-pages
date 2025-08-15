@@ -26,6 +26,7 @@ type ProductsService interface {
 	GetProductByID(id string) (models.ProductPageInfo, error)
 	AddProduct() models.ProductPreview
 	DeleteProductByID(productID string) error
+	GetProductsWithFeedbacks(page int) ([]models.FeedbackPageInfo, int)
 }
 
 type BalanceService interface {
@@ -81,6 +82,7 @@ func NewRouter(
 
 	innerRouter.HandleFunc("POST /api/createToken", appRouter.createToken)
 	innerRouter.HandleFunc("POST /api/createTeacherToken", appRouter.createTeacherToken)
+	innerRouter.HandleFunc("GET /api/feedbacks", appRouter.getFeedbacks)
 
 	return appRouter
 }
@@ -268,6 +270,32 @@ func (r *Router) createTeacherToken(writer http.ResponseWriter, request *http.Re
 	}
 
 	r.sendResponse(writer, request, http.StatusOK, []byte(token))
+}
+
+func (r *Router) getFeedbacks(writer http.ResponseWriter, request *http.Request) {
+	page, err := getPage(request)
+	if err != nil {
+		r.sendErrorResponse(writer, request, fmt.Errorf("%w: %w", models.ErrBadRequest, err))
+
+		return
+	}
+
+	result, totalPages := r.productsService.GetProductsWithFeedbacks(page)
+
+	responseBody := PaginatedResponse[models.FeedbackPageInfo]{
+		TotalPages: totalPages,
+		Data:       result,
+		Page:       page,
+	}
+
+	buf, err := json.Marshal(responseBody)
+	if err != nil {
+		r.sendErrorResponse(writer, request, fmt.Errorf("%w: %w", models.ErrInternalServer, err))
+
+		return
+	}
+
+	r.sendResponse(writer, request, http.StatusOK, buf)
 }
 
 func getPage(request *http.Request) (int, error) {

@@ -18,6 +18,8 @@ type Product struct {
 	Price             float64 `json:"price"`
 	Rating            float64 `json:"rating,omitempty"`
 	WarehouseQuantity int     `json:"warehouseQuantity,omitempty"`
+	OrdersCount       int     `json:"ordersCount,omitempty"`
+	RefundsPercent    float64 `json:"refundsPercent,omitempty"`
 }
 type ProductPageInfo struct {
 	ID                string  `json:"id"`
@@ -30,6 +32,7 @@ type ProductPageInfo struct {
 	Price             float64 `json:"price"`
 	Rating            float64 `json:"rating,omitempty"`
 	WarehouseQuantity int     `json:"warehouseQuantity,omitempty"`
+	OrdersCount       int     `json:"ordersCount,omitempty"`
 }
 
 type ProductPreview struct {
@@ -68,6 +71,7 @@ func (p *Product) ToPageInfo() ProductPageInfo {
 		Price:             p.Price,
 		Rating:            p.Rating,
 		WarehouseQuantity: p.WarehouseQuantity,
+		OrdersCount:       p.OrdersCount,
 	}
 }
 
@@ -93,6 +97,25 @@ type SaleChartDTO struct {
 type SalePoint struct {
 	Amount float64 `json:"amount"`
 	Period string  `json:"period"`
+}
+
+type FeedbackPageInfo struct {
+	ID             string      `json:"id"`
+	Name           string      `json:"name"`
+	Rating         float64     `json:"rating,omitempty"`
+	OrdersCount    int         `json:"ordersCount"`
+	RefundsPercent float64     `json:"refundsPercent,omitempty"`
+	Feedbacks      []*Feedback `json:"feedbacks"`
+}
+type Feedback struct {
+	ID        string   `json:"id"`
+	BuyerName string   `json:"buyerName"`
+	Rating    int      `json:"rating"`
+	Pros      string   `json:"pros"`
+	Cons      string   `json:"cons"`
+	Comment   string   `json:"comment"`
+	PhotosURL []string `json:"photosURL"`
+	IsRefund  bool     `json:"isRefund"`
 }
 
 type AuthTokenClaims struct {

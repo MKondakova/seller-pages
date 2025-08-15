@@ -29,14 +29,21 @@ var Categories = []string{
 	"Канцелярия",
 }
 
+type FeedbackProvider interface {
+	GetFeedbacks(product models.Product) models.FeedbackPageInfo
+	AddFeedbacksToProduct(product models.Product)
+	DeleteFeedbacks(product string)
+}
+
 type ProductService struct {
-	products     []models.Product
-	productIndex map[string]*models.Product
+	products        []models.Product
+	productIndex    map[string]*models.Product
+	feedbackService FeedbackProvider
 
 	productMutex sync.RWMutex
 }
 
-func NewProductService(productsPath string) (*ProductService, error) {
+func NewProductService(productsPath string, feedbackService FeedbackProvider) (*ProductService, error) {
 	file, err := os.Open(productsPath)
 	if err != nil {
 		return nil, fmt.Errorf("failed to open file: %w", err)
@@ -59,8 +66,9 @@ func NewProductService(productsPath string) (*ProductService, error) {
 	}
 
 	return &ProductService{
-		products:     products,
-		productIndex: index,
+		products:        products,
+		productIndex:    index,
+		feedbackService: feedbackService,
 	}, nil
 }
 
@@ -96,6 +104,38 @@ func (s *ProductService) GetProductsList(page int) ([]models.ProductPreview, int
 	return result, totalPages
 }
 
+func (s *ProductService) GetProductsWithFeedbacks(page int) ([]models.FeedbackPageInfo, int) {
+	s.productMutex.RLock()
+	productsAmount := len(s.products)
+	s.productMutex.RUnlock()
+
+	totalPages := int(math.Ceil(float64(productsAmount) / float64(ProductsPerPage)))
+
+	paginationStart := (page - 1) * ProductsPerPage
+	if paginationStart >= productsAmount {
+		return nil, totalPages
+	}
+
+	paginationEnd := paginationStart + ProductsPerPage
+	if paginationEnd > productsAmount {
+		paginationEnd = productsAmount
+	}
+
+	listLen := paginationEnd - paginationStart
+	result := make([]models.FeedbackPageInfo, listLen)
+	productsToTransform := make([]models.Product, listLen)
+
+	s.productMutex.RLock()
+	_ = copy(productsToTransform, s.products[paginationStart:paginationEnd])
+	s.productMutex.RUnlock()
+
+	for i, product := range productsToTransform {
+		result[i] = s.feedbackService.GetFeedbacks(product)
+	}
+
+	return result, totalPages
+}
+
 func (s *ProductService) GetProductByID(productID string) (models.ProductPageInfo, error) {
 	s.productMutex.RLock()
 	defer s.productMutex.RUnlock()
@@ -120,6 +160,8 @@ func (s *ProductService) AddProduct() models.ProductPreview {
 		IsRemovable:       rand.Float64() < 0.7,
 		Rating:            randomRating(),
 		WarehouseQuantity: randomWarehouseQuantity(),
+		OrdersCount:       rand.Intn(1000),
+		RefundsPercent:    rand.Float64() * 100,
 	}
 
 	newProduct.Price, newProduct.OldPrice = getRandomPriceAndOldPrice(newProduct.Category)
@@ -130,6 +172,8 @@ func (s *ProductService) AddProduct() models.ProductPreview {
 	s.products = append(s.products, newProduct)
 
 	s.productMutex.Unlock()
+
+	s.feedbackService.AddFeedbacksToProduct(newProduct)
 
 	return newProduct.ToPreview()
 }
@@ -155,6 +199,8 @@ func (s *ProductService) DeleteProductByID(productID string) error {
 			return nil
 		}
 	}
+
+	s.feedbackService.DeleteFeedbacks(productID)
 
 	return fmt.Errorf("%w: product not found in list", errProductLoss)
 }
