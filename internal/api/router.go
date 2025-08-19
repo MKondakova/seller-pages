@@ -101,7 +101,8 @@ func (r *Router) sendResponse(response http.ResponseWriter, request *http.Reques
 }
 
 func (r *Router) sendErrorResponse(response http.ResponseWriter, request *http.Request, err error) {
-	if errors.Is(err, models.ErrBadRequest) {
+	switch {
+	case errors.Is(err, models.ErrBadRequest):
 		response.WriteHeader(http.StatusBadRequest)
 		r.logger.With(
 			"module", "api",
@@ -110,10 +111,28 @@ func (r *Router) sendErrorResponse(response http.ResponseWriter, request *http.R
 		r.writeError(response, request, err)
 
 		return
-	}
-
-	if errors.Is(err, models.ErrNotFound) {
+	case errors.Is(err, models.ErrNotFound):
 		response.WriteHeader(http.StatusNotFound)
+		r.logger.With(
+			"module", "api",
+			"request_url", request.Method+": "+request.URL.Path,
+		).Warn(err)
+
+		r.writeError(response, request, err)
+
+		return
+	case errors.Is(err, models.ErrForbidden):
+		response.WriteHeader(http.StatusForbidden)
+		r.logger.With(
+			"module", "api",
+			"request_url", request.Method+": "+request.URL.Path,
+		).Warn(err)
+
+		r.writeError(response, request, err)
+
+		return
+	case errors.Is(err, models.ErrUnauthorized):
+		response.WriteHeader(http.StatusUnauthorized)
 		r.logger.With(
 			"module", "api",
 			"request_url", request.Method+": "+request.URL.Path,
@@ -129,6 +148,8 @@ func (r *Router) sendErrorResponse(response http.ResponseWriter, request *http.R
 		"module", "api",
 		"request_url", request.Method+": "+request.URL.Path,
 	).Error(err)
+
+	r.writeError(response, request, err)
 }
 
 func (r *Router) writeError(response http.ResponseWriter, request *http.Request, err error) {
