@@ -7,8 +7,9 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/suite"
-	"seller-pages-wb/internal/models"
-	"seller-pages-wb/tests/integration"
+
+	"seller-pages/internal/models"
+	"seller-pages/tests/integration"
 )
 
 type ProductSuite struct {

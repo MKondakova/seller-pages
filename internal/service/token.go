@@ -10,7 +10,7 @@ import (
 
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/google/uuid"
-	"seller-pages-wb/internal/models"
+	"seller-pages/internal/models"
 )
 
 type TokenService struct {

@@ -7,8 +7,8 @@ import (
 	"syscall"
 
 	_ "go.uber.org/mock/mockgen/model"
-	
-	"seller-pages-wb/internal/application"
+
+	"seller-pages/internal/application"
 )
 
 func main() {

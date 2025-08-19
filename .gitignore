@@ -4,3 +4,4 @@
 app
 /creds.txt
 gen_token/*.hex
+.env

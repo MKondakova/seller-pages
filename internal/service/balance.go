@@ -1,6 +1,6 @@
 package service
 
-import "seller-pages-wb/internal/models"
+import "seller-pages/internal/models"
 
 type BalanceService struct{}
 

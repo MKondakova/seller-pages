@@ -1,1005 +1,1423 @@
 {
-  "0043938a-1881-424e-a4c0-53c23b001ff0": {
-    "id": "0043938a-1881-424e-a4c0-53c23b001ff0",
-    "buyerName": "Aлександр772",
-    "rating": 4,
-    "pros": "",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+  "09a445d9-e31c-4045-8d7e-a1a51a5761ea": {
+    "id": "09a445d9-e31c-4045-8d7e-a1a51a5761ea",
+    "buyerName": "Михаил Крылов",
+    "rating": 1,
+    "pros": "Их не много",
+    "cons": "Ужасный товар, сплошное разочарование",
+    "comment": "Пока не понятно, насколько удобно, нужно больше времени. Обычная вещь, без лишних деталей. ",
     "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp"
-    ],
-    "isRefund": false
-  },
-  "00973f9d-3634-447c-8d6f-0e3d1dac4d1a": {
-    "id": "00973f9d-3634-447c-8d6f-0e3d1dac4d1a",
-    "buyerName": "Aлександр520",
-    "rating": 2,
-    "pros": "",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp",
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp"
-    ],
-    "isRefund": false
-  },
-  "09b08994-13b3-47e8-82b5-16f025f92cd8": {
-    "id": "09b08994-13b3-47e8-82b5-16f025f92cd8",
-    "buyerName": "Aлександр928",
-    "rating": 4,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp"
-    ],
-    "isRefund": false
-  },
-  "09fef9af-437b-4082-9e35-06aa86bd3046": {
-    "id": "09fef9af-437b-4082-9e35-06aa86bd3046",
-    "buyerName": "Aлександр655",
-    "rating": 2,
-    "pros": "",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp",
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp",
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp"
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/10.webp",
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/10.webp"
     ],
     "isRefund": true
   },
-  "10460c2e-93cf-4475-8343-2e5127fb03a5": {
-    "id": "10460c2e-93cf-4475-8343-2e5127fb03a5",
-    "buyerName": "Aлександр485",
-    "rating": 3,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp"
-    ],
-    "isRefund": false
-  },
-  "146d9ad3-cef6-44a0-ad13-b9dedfa07a37": {
-    "id": "146d9ad3-cef6-44a0-ad13-b9dedfa07a37",
-    "buyerName": "Aлександр103",
-    "rating": 4,
-    "pros": "",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp",
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp"
-    ],
-    "isRefund": true
-  },
-  "16b3658f-4d0a-491e-adaa-ac620129f4eb": {
-    "id": "16b3658f-4d0a-491e-adaa-ac620129f4eb",
-    "buyerName": "Aлександр858",
-    "rating": 4,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp",
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp",
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp"
-    ],
-    "isRefund": false
-  },
-  "18887c09-ae0a-4618-a015-044154da3447": {
-    "id": "18887c09-ae0a-4618-a015-044154da3447",
-    "buyerName": "Aлександр489",
+  "0bfbb45d-5a05-4bf7-9708-df3eeb4d7417": {
+    "id": "0bfbb45d-5a05-4bf7-9708-df3eeb4d7417",
+    "buyerName": "Вера",
     "rating": 2,
     "pros": "Их не много",
-    "cons": "Никогда больше ничего у вас не куплю",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp",
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp"
-    ],
-    "isRefund": false
-  },
-  "18924b91-464a-40ae-ada9-879c468e8e8e": {
-    "id": "18924b91-464a-40ae-ada9-879c468e8e8e",
-    "buyerName": "Aлександр245",
-    "rating": 4,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp",
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp",
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp"
-    ],
-    "isRefund": false
-  },
-  "18fc5151-b5eb-4897-aa86-3b49cf7a590c": {
-    "id": "18fc5151-b5eb-4897-aa86-3b49cf7a590c",
-    "buyerName": "Aлександр706",
-    "rating": 2,
-    "pros": "",
-    "cons": "Никогда больше ничего у вас не куплю",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp",
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp",
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp"
-    ],
-    "isRefund": false
-  },
-  "19f11099-42f2-4dd1-9fa6-aa425c10afe2": {
-    "id": "19f11099-42f2-4dd1-9fa6-aa425c10afe2",
-    "buyerName": "Aлександр840",
-    "rating": 3,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp"
-    ],
-    "isRefund": false
-  },
-  "20a70185-65f4-4183-bc6a-a0340717c418": {
-    "id": "20a70185-65f4-4183-bc6a-a0340717c418",
-    "buyerName": "Aлександр796",
-    "rating": 4,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp",
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp",
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp"
-    ],
-    "isRefund": false
-  },
-  "225b5fbe-dbd2-4018-9150-603267330aa9": {
-    "id": "225b5fbe-dbd2-4018-9150-603267330aa9",
-    "buyerName": "Aлександр49",
-    "rating": 3,
-    "pros": "Товар хороший, можно брать, я вот взял",
     "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp",
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp"
-    ],
-    "isRefund": false
-  },
-  "2387ee18-bf05-4f95-91d6-649270115272": {
-    "id": "2387ee18-bf05-4f95-91d6-649270115272",
-    "buyerName": "Aлександр478",
-    "rating": 3,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp"
-    ],
-    "isRefund": false
-  },
-  "29a71d11-6d61-4a6a-8659-1420a87892a6": {
-    "id": "29a71d11-6d61-4a6a-8659-1420a87892a6",
-    "buyerName": "Aлександр329",
-    "rating": 4,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "comment": "Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
     "photosURL": [],
     "isRefund": true
   },
-  "2e959a4e-1058-406d-9923-5fcabad2a381": {
-    "id": "2e959a4e-1058-406d-9923-5fcabad2a381",
-    "buyerName": "Aлександр163",
-    "rating": 2,
-    "pros": "Их не много",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp",
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp",
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp"
-    ],
-    "isRefund": true
-  },
-  "37838d60-cd25-4ed7-8f58-7fdb292a802a": {
-    "id": "37838d60-cd25-4ed7-8f58-7fdb292a802a",
-    "buyerName": "Aлександр41",
+  "0c18ebea-7ffd-41f7-b240-9ef8db0237eb": {
+    "id": "0c18ebea-7ffd-41f7-b240-9ef8db0237eb",
+    "buyerName": "Алексей Волков",
     "rating": 3,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp"
-    ],
-    "isRefund": true
-  },
-  "39697367-bc83-4e65-9a47-8fb3038254e6": {
-    "id": "39697367-bc83-4e65-9a47-8fb3038254e6",
-    "buyerName": "Aлександр42",
-    "rating": 2,
-    "pros": "",
+    "pros": "Всё пришло целое, без повреждений",
     "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp",
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp",
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp"
-    ],
-    "isRefund": true
-  },
-  "3d0036da-45d0-4208-9e4f-b0a920ccddb6": {
-    "id": "3d0036da-45d0-4208-9e4f-b0a920ccddb6",
-    "buyerName": "Aлександр422",
-    "rating": 4,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp",
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp",
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp"
-    ],
+    "comment": "Пока не понятно, насколько удобно, нужно больше времени. Обычная вещь, без лишних деталей. ",
+    "photosURL": [],
     "isRefund": false
   },
-  "3dc6825b-30c4-41cf-9f70-95b7fbe1fc0d": {
-    "id": "3dc6825b-30c4-41cf-9f70-95b7fbe1fc0d",
-    "buyerName": "Aлександр198",
+  "0c5c49f7-cdcf-4c43-a063-a29c31f848d9": {
+    "id": "0c5c49f7-cdcf-4c43-a063-a29c31f848d9",
+    "buyerName": "Анна Петрова",
     "rating": 1,
-    "pros": "Их не много",
-    "cons": "Никогда больше ничего у вас не куплю",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp",
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp"
-    ],
-    "isRefund": false
-  },
-  "42f89142-0c35-47da-8b82-618ddce302b6": {
-    "id": "42f89142-0c35-47da-8b82-618ddce302b6",
-    "buyerName": "Aлександр742",
-    "rating": 1,
-    "pros": "Их не много",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp",
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp"
-    ],
-    "isRefund": false
-  },
-  "450af92a-da25-42c5-adaf-69653dc29cda": {
-    "id": "450af92a-da25-42c5-adaf-69653dc29cda",
-    "buyerName": "Aлександр784",
-    "rating": 2,
     "pros": "",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "cons": "О, их так много, что и не описать",
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
     "photosURL": [
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp",
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp",
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp"
+      "https://basket-19.wbbasket.ru/vol3153/part315358/315358478/images/big/6.webp",
+      "https://basket-18.wbbasket.ru/vol3047/part304775/304775028/images/big/3.webp",
+      "https://basket-18.wbbasket.ru/vol3047/part304775/304775028/images/big/2.webp"
     ],
     "isRefund": false
   },
-  "45811faf-73e8-4bc2-9843-a647d2ba019d": {
-    "id": "45811faf-73e8-4bc2-9843-a647d2ba019d",
-    "buyerName": "Aлександр294",
-    "rating": 4,
-    "pros": "",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp",
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp"
-    ],
-    "isRefund": false
-  },
-  "4610715d-c540-4a8b-b134-ff0c0e7f9a3c": {
-    "id": "4610715d-c540-4a8b-b134-ff0c0e7f9a3c",
-    "buyerName": "Aлександр385",
+  "0e6ad9c2-53b4-4399-921b-fcbe9b1d2ce2": {
+    "id": "0e6ad9c2-53b4-4399-921b-fcbe9b1d2ce2",
+    "buyerName": "Виктория Павлова",
     "rating": 3,
     "pros": "",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [],
-    "isRefund": true
-  },
-  "464e177f-5112-483c-9ebf-6ca0023e2f84": {
-    "id": "464e177f-5112-483c-9ebf-6ca0023e2f84",
-    "buyerName": "Aлександр339",
-    "rating": 1,
-    "pros": "Их не много",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "cons": "Некоторые детали показались не очень качественными",
+    "comment": "По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. ",
     "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp",
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp"
+      "https://basket-17.wbbasket.ru/vol2699/part269922/269922591/images/big/2.webp"
     ],
     "isRefund": false
   },
-  "488c868e-0b6e-4042-83d3-23361834beae": {
-    "id": "488c868e-0b6e-4042-83d3-23361834beae",
-    "buyerName": "Aлександр734",
-    "rating": 2,
-    "pros": "Их не много",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+  "0ee9db48-ae6a-4df6-a412-b45216459e66": {
+    "id": "0ee9db48-ae6a-4df6-a412-b45216459e66",
+    "buyerName": "Анна Петрова",
+    "rating": 4,
+    "pros": "Всё пришло целое, без повреждений",
+    "cons": "Некоторые детали показались не очень качественными",
+    "comment": "По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. ",
     "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp",
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp"
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/9.webp",
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/9.webp"
     ],
     "isRefund": false
   },
-  "49587f31-f2c9-455c-b8c3-168a1ad07b74": {
-    "id": "49587f31-f2c9-455c-b8c3-168a1ad07b74",
-    "buyerName": "Aлександр17",
+  "1194ae9a-8c86-4b0f-b229-7764e41f8c2d": {
+    "id": "1194ae9a-8c86-4b0f-b229-7764e41f8c2d",
+    "buyerName": "Николай Федоров",
     "rating": 3,
     "pros": "",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "cons": "Доставка заняла больше времени, чем хотелось бы",
+    "comment": "По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. ",
+    "photosURL": [
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/10.webp"
+    ],
+    "isRefund": false
+  },
+  "1379b997-fb0b-478b-8d19-8db641677d32": {
+    "id": "1379b997-fb0b-478b-8d19-8db641677d32",
+    "buyerName": "Анна Петрова",
+    "rating": 4,
+    "pros": "",
+    "cons": "Цена кажется слегка завышенной",
+    "comment": "Пользуюсь недолго, пока никаких особых впечатлений нет. По качеству всё в пределах нормы. ",
+    "photosURL": [
+      "https://basket-26.wbbasket.ru/vol4665/part466522/466522013/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "1388e8e8-dfc6-4c7d-b16d-24b64d8fd0b1": {
+    "id": "1388e8e8-dfc6-4c7d-b16d-24b64d8fd0b1",
+    "buyerName": "Emily R.",
+    "rating": 2,
+    "pros": "",
+    "cons": "Ужасный товар, сплошное разочарование",
+    "comment": "Много времени заняло сравнение с конкурентами, супер много аналогов, но выбор пал на этот. ",
+    "photosURL": [
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/10.webp"
+    ],
+    "isRefund": false
+  },
+  "170120d1-2932-412e-a2b0-3c353ef957e1": {
+    "id": "170120d1-2932-412e-a2b0-3c353ef957e1",
+    "buyerName": "Татьяна Мельникова",
+    "rating": 3,
+    "pros": "Идеально подошло, радости моей нет предела",
+    "cons": "Есть ощущение, что прослужит недолго",
+    "comment": "Товар как товар, ожидания совпали с реальностью, на фото все видно. Много времени заняло сравнение с конкурентами, супер много аналогов, но выбор пал на этот. ",
+    "photosURL": [
+      "https://basket-12.wbbasket.ru/vol1712/part171222/171222754/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "1c1a4723-1a24-4f6e-aaa9-8a6c4fa61f42": {
+    "id": "1c1a4723-1a24-4f6e-aaa9-8a6c4fa61f42",
+    "buyerName": "Лена",
+    "rating": 2,
+    "pros": "Их не много",
+    "cons": "О, их так много, что и не описать",
+    "comment": "Много времени заняло сравнение с конкурентами, супер много аналогов, но выбор пал на этот. ",
     "photosURL": [],
     "isRefund": false
   },
-  "497a4d26-ab08-4615-a736-ecb3326b7c59": {
-    "id": "497a4d26-ab08-4615-a736-ecb3326b7c59",
-    "buyerName": "Aлександр875",
+  "1e68be6e-224b-41d0-9e09-cbed07e1dfa0": {
+    "id": "1e68be6e-224b-41d0-9e09-cbed07e1dfa0",
+    "buyerName": "Елена Васильева",
     "rating": 4,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "pros": "",
+    "cons": "Цена кажется слегка завышенной",
+    "comment": "По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
     "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp"
+      "https://basket-25.wbbasket.ru/vol4458/part445898/445898947/images/big/1.webp"
     ],
     "isRefund": true
   },
-  "4b84c83d-f093-475c-a123-90efe14558a4": {
-    "id": "4b84c83d-f093-475c-a123-90efe14558a4",
-    "buyerName": "Aлександр234",
-    "rating": 4,
-    "pros": "Товар хороший, можно брать, я вот взял",
+  "1ebf8de6-8b87-45a8-98b8-09be0a000cf1": {
+    "id": "1ebf8de6-8b87-45a8-98b8-09be0a000cf1",
+    "buyerName": "Андрей Николаев",
+    "rating": 3,
+    "pros": "Идеально подошло, радости моей нет предела",
     "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "comment": "Пользуюсь недолго, пока никаких особых впечатлений нет. По качеству всё в пределах нормы. ",
     "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp",
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp",
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp"
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/9.webp",
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/8.webp"
     ],
     "isRefund": false
   },
-  "5024c606-97fa-44d4-9766-99af767d0d82": {
-    "id": "5024c606-97fa-44d4-9766-99af767d0d82",
-    "buyerName": "Aлександр603",
+  "1fc76f73-e2c0-4f0c-9849-cfd288151d23": {
+    "id": "1fc76f73-e2c0-4f0c-9849-cfd288151d23",
+    "buyerName": "Дмитрий Соколов",
+    "rating": 2,
+    "pros": "",
+    "cons": "Ужасный товар, сплошное разочарование",
+    "comment": "Пользуюсь недолго, пока никаких особых впечатлений нет. По качеству всё в пределах нормы. ",
+    "photosURL": [],
+    "isRefund": true
+  },
+  "21df48b8-e644-4899-ac58-483fcf6be961": {
+    "id": "21df48b8-e644-4899-ac58-483fcf6be961",
+    "buyerName": "Вера",
+    "rating": 3,
+    "pros": "Работает стабильно, без перебоев",
+    "cons": "Есть ощущение, что прослужит недолго",
+    "comment": "Товар как товар, ожидания совпали с реальностью, на фото все видно. Пока не понятно, насколько удобно, нужно больше времени. Обычная вещь, без лишних деталей. ",
+    "photosURL": [],
+    "isRefund": false
+  },
+  "2263701e-aa74-40d5-b36f-82d360c54091": {
+    "id": "2263701e-aa74-40d5-b36f-82d360c54091",
+    "buyerName": "Анна Петрова",
+    "rating": 2,
+    "pros": "",
+    "cons": "О, их так много, что и не описать",
+    "comment": "Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
+    "photosURL": [
+      "https://basket-17.wbbasket.ru/vol2699/part269922/269922591/images/big/2.webp",
+      "https://basket-26.wbbasket.ru/vol4777/part477756/477756673/images/big/1.webp",
+      "https://basket-17.wbbasket.ru/vol2699/part269922/269922591/images/big/2.webp"
+    ],
+    "isRefund": true
+  },
+  "22bae403-d781-4207-aa51-8af0e8c3b185": {
+    "id": "22bae403-d781-4207-aa51-8af0e8c3b185",
+    "buyerName": "Emily R.",
+    "rating": 4,
+    "pros": "Товар хороший, можно брать, я вот взял",
+    "cons": "Некоторые детали показались не очень качественными",
+    "comment": "Пока не понятно, насколько удобно, нужно больше времени. Обычная вещь, без лишних деталей. ",
+    "photosURL": [
+      "https://basket-17.wbbasket.ru/vol2679/part267903/267903164/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "2479f8a6-dbb5-4ddc-a6df-043568daaa1c": {
+    "id": "2479f8a6-dbb5-4ddc-a6df-043568daaa1c",
+    "buyerName": "Лена",
+    "rating": 2,
+    "pros": "",
+    "cons": "О, их так много, что и не описать",
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
+    "photosURL": [
+      "https://basket-15.wbbasket.ru/vol2405/part240554/240554144/images/big/4.webp",
+      "https://basket-26.wbbasket.ru/vol4665/part466522/466522013/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "2668734d-5103-4a9f-8f73-90d00e62b086": {
+    "id": "2668734d-5103-4a9f-8f73-90d00e62b086",
+    "buyerName": "Дмитрий Соколов",
+    "rating": 4,
+    "pros": "",
+    "cons": "Упаковка могла быть надёжнее",
+    "comment": "Пользуюсь недолго, пока никаких особых впечатлений нет. По качеству всё в пределах нормы. ",
+    "photosURL": [],
+    "isRefund": false
+  },
+  "26dddd7b-d9d5-4df6-9171-47911a8c6c19": {
+    "id": "26dddd7b-d9d5-4df6-9171-47911a8c6c19",
+    "buyerName": "Ирина Смирнова",
+    "rating": 2,
+    "pros": "Их не много",
+    "cons": "Никогда больше ничего у вас не куплю",
+    "comment": "Много времени заняло сравнение с конкурентами, супер много аналогов, но выбор пал на этот. ",
+    "photosURL": [
+      "https://basket-26.wbbasket.ru/vol4583/part458372/458372626/images/big/1.webp",
+      "https://basket-26.wbbasket.ru/vol4583/part458372/458372626/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "28bf50d6-0466-43ee-98df-a5d94fa4fe6f": {
+    "id": "28bf50d6-0466-43ee-98df-a5d94fa4fe6f",
+    "buyerName": "Алексей Волков",
+    "rating": 3,
+    "pros": "",
+    "cons": "Некоторые детали показались не очень качественными",
+    "comment": "Много времени заняло сравнение с конкурентами, супер много аналогов, но выбор пал на этот. Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
+    "photosURL": [
+      "https://basket-19.wbbasket.ru/vol3178/part317854/317854683/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "2a13fd12-d8b0-420f-a159-53db5ee19954": {
+    "id": "2a13fd12-d8b0-420f-a159-53db5ee19954",
+    "buyerName": "Вера",
     "rating": 1,
     "pros": "",
+    "cons": "О, их так много, что и не описать",
+    "comment": "Пока не понятно, насколько удобно, нужно больше времени. Обычная вещь, без лишних деталей. ",
+    "photosURL": [
+      "https://basket-21.wbbasket.ru/vol3533/part353384/353384700/images/big/1.webp",
+      "https://basket-12.wbbasket.ru/vol1712/part171222/171222754/images/big/1.webp",
+      "https://basket-16.wbbasket.ru/vol2501/part250150/250150130/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "2b1c16b5-f355-4af9-99f0-2e7c25e39cc7": {
+    "id": "2b1c16b5-f355-4af9-99f0-2e7c25e39cc7",
+    "buyerName": "Сергей Иванов",
+    "rating": 1,
+    "pros": "Их не много",
+    "cons": "Ужасный товар, сплошное разочарование",
+    "comment": "Пользуюсь недолго, пока никаких особых впечатлений нет. По качеству всё в пределах нормы. ",
+    "photosURL": [
+      "https://basket-19.wbbasket.ru/vol3178/part317854/317854683/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "2ca1094d-c5f4-45ab-8ac0-0e4df816f29b": {
+    "id": "2ca1094d-c5f4-45ab-8ac0-0e4df816f29b",
+    "buyerName": "Emily R.",
+    "rating": 2,
+    "pros": "Их не много",
     "cons": "Никогда больше ничего у вас не куплю",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
     "photosURL": [],
     "isRefund": true
   },
-  "50d08d0d-782c-4397-be23-d57b2ec4a6b9": {
-    "id": "50d08d0d-782c-4397-be23-d57b2ec4a6b9",
-    "buyerName": "Aлександр252",
+  "2e65ed1a-5205-4496-8381-caa5c8ff3d00": {
+    "id": "2e65ed1a-5205-4496-8381-caa5c8ff3d00",
+    "buyerName": "Вера",
+    "rating": 1,
+    "pros": "Их не много",
+    "cons": "Никогда больше ничего у вас не куплю",
+    "comment": "Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
+    "photosURL": [
+      "https://basket-16.wbbasket.ru/vol2501/part250150/250150130/images/big/1.webp",
+      "https://basket-21.wbbasket.ru/vol3533/part353384/353384700/images/big/1.webp",
+      "https://basket-26.wbbasket.ru/vol4583/part458372/458372626/images/big/1.webp"
+    ],
+    "isRefund": true
+  },
+  "2e8711ca-0424-4793-92d0-5aad89aeabe8": {
+    "id": "2e8711ca-0424-4793-92d0-5aad89aeabe8",
+    "buyerName": "Михаил Крылов",
+    "rating": 2,
+    "pros": "Их не много",
+    "cons": "",
+    "comment": "Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
+    "photosURL": [
+      "https://basket-18.wbbasket.ru/vol3047/part304775/304775028/images/big/2.webp",
+      "https://basket-18.wbbasket.ru/vol3047/part304775/304775028/images/big/2.webp",
+      "https://basket-17.wbbasket.ru/vol2699/part269922/269922591/images/big/2.webp"
+    ],
+    "isRefund": false
+  },
+  "31618728-2d50-4e2f-a6a9-09104a9d7245": {
+    "id": "31618728-2d50-4e2f-a6a9-09104a9d7245",
+    "buyerName": "Татьяна Мельникова",
+    "rating": 1,
+    "pros": "Их не много",
+    "cons": "Ужасный товар, сплошное разочарование",
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
+    "photosURL": [
+      "https://basket-15.wbbasket.ru/vol2237/part223714/223714031/images/big/1.webp",
+      "https://basket-02.wbbasket.ru/vol255/part25539/25539349/images/big/2.webp"
+    ],
+    "isRefund": false
+  },
+  "31f01d20-5b0f-4544-a80d-d42befa3080f": {
+    "id": "31f01d20-5b0f-4544-a80d-d42befa3080f",
+    "buyerName": "Алексей Волков",
+    "rating": 3,
+    "pros": "Цена показалась адекватной за полученное качество",
+    "cons": "При получении заметил(а) мелкие недочёты",
+    "comment": "По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
+    "photosURL": [],
+    "isRefund": false
+  },
+  "33311dc3-63c7-4aa5-91ba-3391fafdb8d7": {
+    "id": "33311dc3-63c7-4aa5-91ba-3391fafdb8d7",
+    "buyerName": "Лена",
+    "rating": 4,
+    "pros": "Работает стабильно, без перебоев",
+    "cons": "Доставка заняла больше времени, чем хотелось бы",
+    "comment": "По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. Много времени заняло сравнение с конкурентами, супер много аналогов, но выбор пал на этот. ",
+    "photosURL": [],
+    "isRefund": false
+  },
+  "333c18f1-5478-4d71-9474-ab201f55e7fe": {
+    "id": "333c18f1-5478-4d71-9474-ab201f55e7fe",
+    "buyerName": "Татьяна Мельникова",
+    "rating": 2,
+    "pros": "",
+    "cons": "О, их так много, что и не описать",
+    "comment": "Пока не понятно, насколько удобно, нужно больше времени. Обычная вещь, без лишних деталей. ",
+    "photosURL": [
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/8.webp",
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/10.webp"
+    ],
+    "isRefund": false
+  },
+  "33c6e000-42e0-4fe1-81c3-e259b0e747a8": {
+    "id": "33c6e000-42e0-4fe1-81c3-e259b0e747a8",
+    "buyerName": "Сергей Иванов",
+    "rating": 1,
+    "pros": "",
+    "cons": "",
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
+    "photosURL": [],
+    "isRefund": false
+  },
+  "344ddc8b-afa2-4675-bcd1-50603c47acbf": {
+    "id": "344ddc8b-afa2-4675-bcd1-50603c47acbf",
+    "buyerName": "Елена Васильева",
+    "rating": 1,
+    "pros": "Их не много",
+    "cons": "Никогда больше ничего у вас не куплю",
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
+    "photosURL": [
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/10.webp",
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/9.webp"
+    ],
+    "isRefund": true
+  },
+  "3642d57e-a097-4c11-b547-32bd3e61f52e": {
+    "id": "3642d57e-a097-4c11-b547-32bd3e61f52e",
+    "buyerName": "Виктория Павлова",
+    "rating": 3,
+    "pros": "Цена показалась адекватной за полученное качество",
+    "cons": "При получении заметил(а) мелкие недочёты",
+    "comment": "По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. ",
+    "photosURL": [
+      "https://basket-10.wbbasket.ru/vol1511/part151190/151190621/images/big/1.webp"
+    ],
+    "isRefund": true
+  },
+  "37decaba-35dd-43b2-9529-ee4d4574c6a3": {
+    "id": "37decaba-35dd-43b2-9529-ee4d4574c6a3",
+    "buyerName": "Ирина Смирнова",
+    "rating": 1,
+    "pros": "Их не много",
+    "cons": "Никогда больше ничего у вас не куплю",
+    "comment": "По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. ",
+    "photosURL": [
+      "https://basket-16.wbbasket.ru/vol2581/part258124/258124707/images/big/1.webp",
+      "https://basket-16.wbbasket.ru/vol2501/part250150/250150130/images/big/1.webp",
+      "https://basket-12.wbbasket.ru/vol1712/part171222/171222754/images/big/1.webp"
+    ],
+    "isRefund": true
+  },
+  "42ed6f9c-d2ed-4065-9007-b126f9add90c": {
+    "id": "42ed6f9c-d2ed-4065-9007-b126f9add90c",
+    "buyerName": "Виктория Павлова",
+    "rating": 3,
+    "pros": "Упаковка была аккуратной и плотной",
+    "cons": "Некоторые детали показались не очень качественными",
+    "comment": "Пока не понятно, насколько удобно, нужно больше времени. Обычная вещь, без лишних деталей. Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
+    "photosURL": [
+      "https://basket-19.wbbasket.ru/vol3153/part315358/315358478/images/big/6.webp"
+    ],
+    "isRefund": true
+  },
+  "45e848b9-f4c8-4121-bd1a-d60b86c8cf18": {
+    "id": "45e848b9-f4c8-4121-bd1a-d60b86c8cf18",
+    "buyerName": "Лена",
+    "rating": 1,
+    "pros": "Их не много",
+    "cons": "О, их так много, что и не описать",
+    "comment": "Много времени заняло сравнение с конкурентами, супер много аналогов, но выбор пал на этот. ",
+    "photosURL": [
+      "https://basket-19.wbbasket.ru/vol3178/part317854/317854683/images/big/3.webp",
+      "https://basket-19.wbbasket.ru/vol3178/part317854/317854683/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "4b93113a-f977-4f5a-9e63-ad6d189df62a": {
+    "id": "4b93113a-f977-4f5a-9e63-ad6d189df62a",
+    "buyerName": "John D.",
+    "rating": 4,
+    "pros": "",
+    "cons": "Некоторые детали показались не очень качественными",
+    "comment": "Много времени заняло сравнение с конкурентами, супер много аналогов, но выбор пал на этот. По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. ",
+    "photosURL": [],
+    "isRefund": false
+  },
+  "4cbc4e91-d0ad-4efd-bd54-8b3bd684ec42": {
+    "id": "4cbc4e91-d0ad-4efd-bd54-8b3bd684ec42",
+    "buyerName": "Ирина Смирнова",
+    "rating": 3,
+    "pros": "Выглядит аккуратно и без лишних деталей",
+    "cons": "Цена кажется слегка завышенной",
+    "comment": "Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
+    "photosURL": [
+      "https://basket-15.wbbasket.ru/vol2405/part240554/240554144/images/big/3.webp",
+      "https://basket-15.wbbasket.ru/vol2405/part240554/240554144/images/big/3.webp"
+    ],
+    "isRefund": false
+  },
+  "4ddbf59c-9d86-4fd0-abbf-f131faceb4c4": {
+    "id": "4ddbf59c-9d86-4fd0-abbf-f131faceb4c4",
+    "buyerName": "Сергей Иванов",
     "rating": 2,
     "pros": "Их не много",
     "cons": "Никогда больше ничего у вас не куплю",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "comment": "Много времени заняло сравнение с конкурентами, супер много аналогов, но выбор пал на этот. Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
     "photosURL": [
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp"
+      "https://basket-16.wbbasket.ru/vol2501/part250150/250150130/images/big/1.webp",
+      "https://basket-26.wbbasket.ru/vol4583/part458372/458372626/images/big/1.webp"
     ],
     "isRefund": false
   },
-  "56c12314-47c2-475c-b4c4-b30021401307": {
-    "id": "56c12314-47c2-475c-b4c4-b30021401307",
-    "buyerName": "Aлександр636",
-    "rating": 4,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp",
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp"
-    ],
-    "isRefund": false
-  },
-  "580971ee-9198-4acc-83fb-1959e2231c36": {
-    "id": "580971ee-9198-4acc-83fb-1959e2231c36",
-    "buyerName": "Aлександр795",
+  "4f4e1dc0-4835-4b4e-b1cd-c317ba175be2": {
+    "id": "4f4e1dc0-4835-4b4e-b1cd-c317ba175be2",
+    "buyerName": "John D.",
     "rating": 2,
     "pros": "Их не много",
     "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp",
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp"
-    ],
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. ",
+    "photosURL": [],
     "isRefund": false
   },
-  "5b592013-a953-4b4d-b4ff-8ca90970c374": {
-    "id": "5b592013-a953-4b4d-b4ff-8ca90970c374",
-    "buyerName": "Aлександр11",
+  "50e00552-1610-47f7-adaf-b30bacefb874": {
+    "id": "50e00552-1610-47f7-adaf-b30bacefb874",
+    "buyerName": "Дмитрий Соколов",
     "rating": 4,
     "pros": "",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "cons": "Некоторые детали показались не очень качественными",
+    "comment": "По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. Пользуюсь недолго, пока никаких особых впечатлений нет. По качеству всё в пределах нормы. ",
     "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp"
+      "https://basket-26.wbbasket.ru/vol4665/part466522/466522013/images/big/1.webp"
     ],
     "isRefund": false
   },
-  "5ba3f5d2-1cf9-42ee-a01c-366163f276f8": {
-    "id": "5ba3f5d2-1cf9-42ee-a01c-366163f276f8",
-    "buyerName": "Aлександр814",
+  "5146a1d8-c71f-4b0d-af8d-efbec6a79f52": {
+    "id": "5146a1d8-c71f-4b0d-af8d-efbec6a79f52",
+    "buyerName": "Андрей Николаев",
+    "rating": 2,
+    "pros": "Их не много",
+    "cons": "Никогда больше ничего у вас не куплю",
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
+    "photosURL": [
+      "https://basket-12.wbbasket.ru/vol1712/part171222/171222754/images/big/1.webp",
+      "https://basket-26.wbbasket.ru/vol4583/part458372/458372626/images/big/1.webp",
+      "https://basket-25.wbbasket.ru/vol4458/part445898/445898947/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "52328603-8a05-4023-8365-b2534a11886d": {
+    "id": "52328603-8a05-4023-8365-b2534a11886d",
+    "buyerName": "Ольга Морозова",
+    "rating": 4,
+    "pros": "Работает стабильно, без перебоев",
+    "cons": "",
+    "comment": "Пока не понятно, насколько удобно, нужно больше времени. Обычная вещь, без лишних деталей. ",
+    "photosURL": [],
+    "isRefund": true
+  },
+  "54136770-8ec1-4f21-abb8-de0ba5de9c60": {
+    "id": "54136770-8ec1-4f21-abb8-de0ba5de9c60",
+    "buyerName": "Анна Петрова",
+    "rating": 2,
+    "pros": "",
+    "cons": "О, их так много, что и не описать",
+    "comment": "Пользуюсь недолго, пока никаких особых впечатлений нет. По качеству всё в пределах нормы. Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
+    "photosURL": [
+      "https://basket-15.wbbasket.ru/vol2405/part240554/240554144/images/big/4.webp",
+      "https://basket-15.wbbasket.ru/vol2405/part240554/240554144/images/big/4.webp",
+      "https://basket-26.wbbasket.ru/vol4665/part466522/466522013/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "54821c8f-421d-45c0-aee8-d26b034a37e8": {
+    "id": "54821c8f-421d-45c0-aee8-d26b034a37e8",
+    "buyerName": "Николай Федоров",
+    "rating": 2,
+    "pros": "Их не много",
+    "cons": "Никогда больше ничего у вас не куплю",
+    "comment": "Пока не понятно, насколько удобно, нужно больше времени. Обычная вещь, без лишних деталей. Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
+    "photosURL": [
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/9.webp"
+    ],
+    "isRefund": false
+  },
+  "554e46dc-0986-44c7-8889-1f2d670021d1": {
+    "id": "554e46dc-0986-44c7-8889-1f2d670021d1",
+    "buyerName": "Анна Петрова",
+    "rating": 3,
+    "pros": "Упаковка была аккуратной и плотной",
+    "cons": "Цена кажется слегка завышенной",
+    "comment": "По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. ",
+    "photosURL": [
+      "https://basket-17.wbbasket.ru/vol2679/part267903/267903164/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "572bd861-e19d-4502-9393-2cd7f9726d25": {
+    "id": "572bd861-e19d-4502-9393-2cd7f9726d25",
+    "buyerName": "Сергей Иванов",
+    "rating": 4,
+    "pros": "Выглядит аккуратно и без лишних деталей",
+    "cons": "",
+    "comment": "Много времени заняло сравнение с конкурентами, супер много аналогов, но выбор пал на этот. Пользуюсь недолго, пока никаких особых впечатлений нет. По качеству всё в пределах нормы. ",
+    "photosURL": [
+      "https://basket-18.wbbasket.ru/vol3047/part304775/304775028/images/big/3.webp",
+      "https://basket-19.wbbasket.ru/vol3153/part315358/315358478/images/big/6.webp",
+      "https://basket-19.wbbasket.ru/vol3153/part315358/315358478/images/big/6.webp"
+    ],
+    "isRefund": false
+  },
+  "577164e5-cd2d-4ab6-937a-87e846496ff1": {
+    "id": "577164e5-cd2d-4ab6-937a-87e846496ff1",
+    "buyerName": "John D.",
+    "rating": 2,
+    "pros": "",
+    "cons": "",
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
+    "photosURL": [
+      "https://basket-21.wbbasket.ru/vol3533/part353384/353384700/images/big/1.webp"
+    ],
+    "isRefund": true
+  },
+  "5a6b7376-023c-4545-9d91-9fb6fa82edbd": {
+    "id": "5a6b7376-023c-4545-9d91-9fb6fa82edbd",
+    "buyerName": "Дмитрий Соколов",
+    "rating": 3,
+    "pros": "Упаковка была аккуратной и плотной",
+    "cons": "Некоторые детали показались не очень качественными",
+    "comment": "Много времени заняло сравнение с конкурентами, супер много аналогов, но выбор пал на этот. ",
+    "photosURL": [
+      "https://basket-26.wbbasket.ru/vol4806/part480669/480669352/images/big/2.webp"
+    ],
+    "isRefund": true
+  },
+  "5ba013d7-10e5-4e15-8e15-f03a6f5e904a": {
+    "id": "5ba013d7-10e5-4e15-8e15-f03a6f5e904a",
+    "buyerName": "Emily R.",
+    "rating": 1,
+    "pros": "Их не много",
+    "cons": "Никогда больше ничего у вас не куплю",
+    "comment": "Пользуюсь недолго, пока никаких особых впечатлений нет. По качеству всё в пределах нормы. Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
+    "photosURL": [],
+    "isRefund": true
+  },
+  "5bde5c49-1d8a-41d6-bd40-93046093e2a2": {
+    "id": "5bde5c49-1d8a-41d6-bd40-93046093e2a2",
+    "buyerName": "Татьяна Мельникова",
+    "rating": 3,
+    "pros": "Работает стабильно, без перебоев",
+    "cons": "Есть ощущение, что прослужит недолго",
+    "comment": "Товар как товар, ожидания совпали с реальностью, на фото все видно. По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. ",
+    "photosURL": [
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/10.webp",
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/8.webp"
+    ],
+    "isRefund": false
+  },
+  "620d2b76-2040-4f71-bf3a-dd37803ab873": {
+    "id": "620d2b76-2040-4f71-bf3a-dd37803ab873",
+    "buyerName": "Виктория Павлова",
+    "rating": 3,
+    "pros": "Товар хороший, можно брать, я вот взял",
+    "cons": "Упаковка могла быть надёжнее",
+    "comment": "Пока не понятно, насколько удобно, нужно больше времени. Обычная вещь, без лишних деталей. ",
+    "photosURL": [
+      "https://basket-21.wbbasket.ru/vol3533/part353384/353384700/images/big/1.webp",
+      "https://basket-16.wbbasket.ru/vol2501/part250150/250150130/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "66443648-6f55-46fe-9704-5701cd1ad6b0": {
+    "id": "66443648-6f55-46fe-9704-5701cd1ad6b0",
+    "buyerName": "Виктория Павлова",
+    "rating": 4,
+    "pros": "Упаковка была аккуратной и плотной",
+    "cons": "Цена кажется слегка завышенной",
+    "comment": "По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. Пока не понятно, насколько удобно, нужно больше времени. Обычная вещь, без лишних деталей. ",
+    "photosURL": [
+      "https://basket-11.wbbasket.ru/vol1625/part162546/162546677/images/big/2.webp"
+    ],
+    "isRefund": false
+  },
+  "7847cbf2-eb10-4813-ab64-f5eb279cb0fd": {
+    "id": "7847cbf2-eb10-4813-ab64-f5eb279cb0fd",
+    "buyerName": "Мария Кузнецова",
+    "rating": 2,
+    "pros": "Их не много",
+    "cons": "",
+    "comment": "Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
+    "photosURL": [
+      "https://basket-26.wbbasket.ru/vol4665/part466522/466522013/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "7a60c699-169c-4f95-904b-b1a8bee6a0bd": {
+    "id": "7a60c699-169c-4f95-904b-b1a8bee6a0bd",
+    "buyerName": "Елена Васильева",
+    "rating": 4,
+    "pros": "Работает стабильно, без перебоев",
+    "cons": "Некоторые детали показались не очень качественными",
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
+    "photosURL": [],
+    "isRefund": false
+  },
+  "7b4461b6-9adc-42d2-82ce-495c37cff62d": {
+    "id": "7b4461b6-9adc-42d2-82ce-495c37cff62d",
+    "buyerName": "Вера",
+    "rating": 1,
+    "pros": "Их не много",
+    "cons": "Никогда больше ничего у вас не куплю",
+    "comment": "Пока не понятно, насколько удобно, нужно больше времени. Обычная вещь, без лишних деталей. Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
+    "photosURL": [
+      "https://basket-15.wbbasket.ru/vol2405/part240554/240554144/images/big/3.webp",
+      "https://basket-15.wbbasket.ru/vol2405/part240554/240554144/images/big/3.webp",
+      "https://basket-26.wbbasket.ru/vol4665/part466522/466522013/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "7badc8df-6816-4c98-9d61-a8d84ff966ef": {
+    "id": "7badc8df-6816-4c98-9d61-a8d84ff966ef",
+    "buyerName": "Emily R.",
+    "rating": 1,
+    "pros": "",
+    "cons": "",
+    "comment": "По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. Пока не понятно, насколько удобно, нужно больше времени. Обычная вещь, без лишних деталей. ",
+    "photosURL": [
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/10.webp",
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/9.webp"
+    ],
+    "isRefund": false
+  },
+  "7c6c40bf-931e-4e6e-925f-2a8c35fbea58": {
+    "id": "7c6c40bf-931e-4e6e-925f-2a8c35fbea58",
+    "buyerName": "Дмитрий Соколов",
     "rating": 3,
     "pros": "Товар хороший, можно брать, я вот взял",
     "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "comment": "Пользуюсь недолго, пока никаких особых впечатлений нет. По качеству всё в пределах нормы. ",
     "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp",
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp",
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp"
+      "https://basket-15.wbbasket.ru/vol2405/part240554/240554144/images/big/4.webp"
     ],
-    "isRefund": false
+    "isRefund": true
   },
-  "5ca87b7e-7e63-4644-abd5-295c508c8b8a": {
-    "id": "5ca87b7e-7e63-4644-abd5-295c508c8b8a",
-    "buyerName": "Aлександр581",
-    "rating": 2,
-    "pros": "Их не много",
-    "cons": "Никогда больше ничего у вас не куплю",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp",
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp",
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp"
-    ],
-    "isRefund": false
-  },
-  "6544ab3e-88f9-4c84-adea-0436e49f8a8b": {
-    "id": "6544ab3e-88f9-4c84-adea-0436e49f8a8b",
-    "buyerName": "Aлександр912",
-    "rating": 4,
-    "pros": "",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp",
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp"
-    ],
-    "isRefund": false
-  },
-  "69cc8835-7687-4124-879e-47c2c57820d9": {
-    "id": "69cc8835-7687-4124-879e-47c2c57820d9",
-    "buyerName": "Aлександр631",
-    "rating": 1,
-    "pros": "Их не много",
-    "cons": "Никогда больше ничего у вас не куплю",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [],
-    "isRefund": false
-  },
-  "73de46d0-24bc-4d9a-ae4e-808fd665e6ed": {
-    "id": "73de46d0-24bc-4d9a-ae4e-808fd665e6ed",
-    "buyerName": "Aлександр67",
+  "7c749a49-a468-4c12-b61d-1f590748342d": {
+    "id": "7c749a49-a468-4c12-b61d-1f590748342d",
+    "buyerName": "Вера",
     "rating": 3,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "pros": "Выглядит аккуратно и без лишних деталей",
+    "cons": "",
+    "comment": "Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
     "photosURL": [
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp",
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp",
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp"
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/10.webp",
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/9.webp"
+    ],
+    "isRefund": false
+  },
+  "7d6cce25-2466-4302-aebf-ea4a21bad217": {
+    "id": "7d6cce25-2466-4302-aebf-ea4a21bad217",
+    "buyerName": "Анна Петрова",
+    "rating": 1,
+    "pros": "Их не много",
+    "cons": "О, их так много, что и не описать",
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
+    "photosURL": [
+      "https://basket-15.wbbasket.ru/vol2237/part223714/223714031/images/big/1.webp"
     ],
     "isRefund": true
   },
-  "78d3eeeb-caa2-411f-af87-a363f60780ce": {
-    "id": "78d3eeeb-caa2-411f-af87-a363f60780ce",
-    "buyerName": "Aлександр85",
-    "rating": 1,
-    "pros": "Их не много",
-    "cons": "Никогда больше ничего у вас не куплю",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp",
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp",
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp"
-    ],
-    "isRefund": false
-  },
-  "7ce67e5d-d29b-4236-9f00-6f37ae67587a": {
-    "id": "7ce67e5d-d29b-4236-9f00-6f37ae67587a",
-    "buyerName": "Aлександр250",
-    "rating": 2,
-    "pros": "Их не много",
-    "cons": "Никогда больше ничего у вас не куплю",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp",
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp",
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp"
-    ],
-    "isRefund": false
-  },
-  "7d7d0567-a756-431f-97d5-d196eb04fcb7": {
-    "id": "7d7d0567-a756-431f-97d5-d196eb04fcb7",
-    "buyerName": "Aлександр555",
-    "rating": 1,
-    "pros": "",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp",
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp",
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp"
-    ],
-    "isRefund": false
-  },
-  "81b06ece-9e5a-49d3-876c-e75c7d63ce4b": {
-    "id": "81b06ece-9e5a-49d3-876c-e75c7d63ce4b",
-    "buyerName": "Aлександр873",
-    "rating": 2,
-    "pros": "Их не много",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp",
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp"
-    ],
-    "isRefund": true
-  },
-  "85e92da6-90e1-450a-b0e7-770421d1b9d8": {
-    "id": "85e92da6-90e1-450a-b0e7-770421d1b9d8",
-    "buyerName": "Aлександр302",
-    "rating": 2,
-    "pros": "",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp"
-    ],
-    "isRefund": false
-  },
-  "8ae35f90-e451-41f2-bf4d-e36defc2797e": {
-    "id": "8ae35f90-e451-41f2-bf4d-e36defc2797e",
-    "buyerName": "Aлександр542",
-    "rating": 1,
-    "pros": "Их не много",
-    "cons": "Никогда больше ничего у вас не куплю",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp",
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp",
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp"
-    ],
-    "isRefund": false
-  },
-  "9160be38-5153-41b5-95e6-d25d273541d0": {
-    "id": "9160be38-5153-41b5-95e6-d25d273541d0",
-    "buyerName": "Aлександр226",
-    "rating": 4,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [],
-    "isRefund": true
-  },
-  "948bc44c-ddfc-42e3-83f3-ff814d3cfb36": {
-    "id": "948bc44c-ddfc-42e3-83f3-ff814d3cfb36",
-    "buyerName": "Aлександр37",
+  "7ea732b5-3987-4aa7-af1c-6468929a576b": {
+    "id": "7ea732b5-3987-4aa7-af1c-6468929a576b",
+    "buyerName": "Андрей Николаев",
     "rating": 3,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "pros": "Работает стабильно, без перебоев",
+    "cons": "При получении заметил(а) мелкие недочёты",
+    "comment": "Много времени заняло сравнение с конкурентами, супер много аналогов, но выбор пал на этот. ",
+    "photosURL": [],
+    "isRefund": false
+  },
+  "80e4b1c6-fdb4-457a-9860-7ef2d6b8520a": {
+    "id": "80e4b1c6-fdb4-457a-9860-7ef2d6b8520a",
+    "buyerName": "Ольга Морозова",
+    "rating": 4,
+    "pros": "",
+    "cons": "Некоторые детали показались не очень качественными",
+    "comment": "Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
     "photosURL": [
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp"
+      "https://basket-12.wbbasket.ru/vol1712/part171222/171222754/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "881d6633-b80f-4dda-8b55-fb105fb06c2a": {
+    "id": "881d6633-b80f-4dda-8b55-fb105fb06c2a",
+    "buyerName": "Дмитрий Соколов",
+    "rating": 4,
+    "pros": "",
+    "cons": "",
+    "comment": "По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. ",
+    "photosURL": [
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/10.webp",
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/10.webp"
+    ],
+    "isRefund": false
+  },
+  "8a90c570-f153-4c56-b3ee-49d7f2e55ab6": {
+    "id": "8a90c570-f153-4c56-b3ee-49d7f2e55ab6",
+    "buyerName": "Анна Петрова",
+    "rating": 4,
+    "pros": "",
+    "cons": "",
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
+    "photosURL": [],
+    "isRefund": false
+  },
+  "8e762d63-d198-4905-bcc1-f113e90f3397": {
+    "id": "8e762d63-d198-4905-bcc1-f113e90f3397",
+    "buyerName": "Алексей Волков",
+    "rating": 1,
+    "pros": "",
+    "cons": "",
+    "comment": "Много времени заняло сравнение с конкурентами, супер много аналогов, но выбор пал на этот. ",
+    "photosURL": [],
+    "isRefund": false
+  },
+  "90637819-8830-4df7-8fa9-389f6b056b1f": {
+    "id": "90637819-8830-4df7-8fa9-389f6b056b1f",
+    "buyerName": "Татьяна Мельникова",
+    "rating": 1,
+    "pros": "Их не много",
+    "cons": "Ужасный товар, сплошное разочарование",
+    "comment": "Пользуюсь недолго, пока никаких особых впечатлений нет. По качеству всё в пределах нормы. ",
+    "photosURL": [
+      "https://basket-17.wbbasket.ru/vol2699/part269922/269922591/images/big/2.webp",
+      "https://basket-19.wbbasket.ru/vol3153/part315358/315358478/images/big/6.webp"
     ],
     "isRefund": true
   },
-  "960f8865-366f-488a-bb4e-3909dfa1c789": {
-    "id": "960f8865-366f-488a-bb4e-3909dfa1c789",
-    "buyerName": "Aлександр431",
-    "rating": 4,
+  "93e0c24b-f745-452c-a9fc-e9f7848123e8": {
+    "id": "93e0c24b-f745-452c-a9fc-e9f7848123e8",
+    "buyerName": "Елена Васильева",
+    "rating": 2,
     "pros": "",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [],
+    "cons": "",
+    "comment": "По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. ",
+    "photosURL": [
+      "https://basket-16.wbbasket.ru/vol2581/part258124/258124707/images/big/1.webp",
+      "https://basket-16.wbbasket.ru/vol2501/part250150/250150130/images/big/1.webp",
+      "https://basket-21.wbbasket.ru/vol3533/part353384/353384700/images/big/1.webp"
+    ],
     "isRefund": false
   },
-  "98507952-b10c-46c7-aa33-7d6615ee3ec9": {
-    "id": "98507952-b10c-46c7-aa33-7d6615ee3ec9",
-    "buyerName": "Aлександр982",
-    "rating": 4,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+  "949af530-3d78-43c1-8fc5-34fceb8bcf48": {
+    "id": "949af530-3d78-43c1-8fc5-34fceb8bcf48",
+    "buyerName": "Николай Федоров",
+    "rating": 1,
+    "pros": "Их не много",
+    "cons": "Никогда больше ничего у вас не куплю",
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
     "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp",
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp"
+      "https://basket-25.wbbasket.ru/vol4458/part445898/445898947/images/big/1.webp"
     ],
     "isRefund": true
   },
-  "98f151db-2b76-47fc-adf5-15898465d8a1": {
-    "id": "98f151db-2b76-47fc-adf5-15898465d8a1",
-    "buyerName": "Aлександр810",
+  "9ca81a12-93ad-41b6-8c82-a1fc7f271dd6": {
+    "id": "9ca81a12-93ad-41b6-8c82-a1fc7f271dd6",
+    "buyerName": "Лена",
     "rating": 4,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "pros": "Упаковка была аккуратной и плотной",
+    "cons": "Доставка заняла больше времени, чем хотелось бы",
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
     "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp",
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp",
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp"
+      "https://basket-15.wbbasket.ru/vol2237/part223714/223714031/images/big/1.webp",
+      "https://basket-26.wbbasket.ru/vol4806/part480669/480669352/images/big/2.webp",
+      "https://basket-10.wbbasket.ru/vol1314/part131439/131439248/images/big/3.webp"
     ],
     "isRefund": false
   },
-  "993e794c-3b0e-40a5-b283-12548a08350e": {
-    "id": "993e794c-3b0e-40a5-b283-12548a08350e",
-    "buyerName": "Aлександр586",
-    "rating": 1,
+  "9d95dd38-674d-4635-8eaf-b35f6b6ccdc4": {
+    "id": "9d95dd38-674d-4635-8eaf-b35f6b6ccdc4",
+    "buyerName": "Emily R.",
+    "rating": 2,
     "pros": "",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "cons": "О, их так много, что и не описать",
+    "comment": "Пользуюсь недолго, пока никаких особых впечатлений нет. По качеству всё в пределах нормы. ",
     "photosURL": [
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp",
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp",
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp"
+      "https://basket-10.wbbasket.ru/vol1314/part131439/131439248/images/big/3.webp"
+    ],
+    "isRefund": false
+  },
+  "9f262831-d866-4b71-af76-3e88ddaae40c": {
+    "id": "9f262831-d866-4b71-af76-3e88ddaae40c",
+    "buyerName": "Ирина Смирнова",
+    "rating": 2,
+    "pros": "Их не много",
+    "cons": "",
+    "comment": "Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
+    "photosURL": [],
+    "isRefund": true
+  },
+  "9fd9eadd-a37e-4bc0-8352-b1cafc6922f6": {
+    "id": "9fd9eadd-a37e-4bc0-8352-b1cafc6922f6",
+    "buyerName": "John D.",
+    "rating": 2,
+    "pros": "Их не много",
+    "cons": "О, их так много, что и не описать",
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
+    "photosURL": [],
+    "isRefund": true
+  },
+  "a2b0485b-09ac-4781-a679-77bd69f869ee": {
+    "id": "a2b0485b-09ac-4781-a679-77bd69f869ee",
+    "buyerName": "Дмитрий Соколов",
+    "rating": 1,
+    "pros": "Их не много",
+    "cons": "О, их так много, что и не описать",
+    "comment": "Пока не понятно, насколько удобно, нужно больше времени. Обычная вещь, без лишних деталей. ",
+    "photosURL": [
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/9.webp",
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/8.webp",
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/8.webp"
+    ],
+    "isRefund": false
+  },
+  "a834484b-68b9-4e00-9306-361ce886adef": {
+    "id": "a834484b-68b9-4e00-9306-361ce886adef",
+    "buyerName": "Виктория Павлова",
+    "rating": 4,
+    "pros": "",
+    "cons": "Есть ощущение, что прослужит недолго",
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
+    "photosURL": [
+      "https://basket-10.wbbasket.ru/vol1314/part131439/131439248/images/big/3.webp",
+      "https://basket-26.wbbasket.ru/vol4806/part480669/480669352/images/big/2.webp",
+      "https://basket-26.wbbasket.ru/vol4806/part480669/480669352/images/big/2.webp"
     ],
     "isRefund": true
   },
-  "99562182-823a-46a9-b7cf-5720810b4159": {
-    "id": "99562182-823a-46a9-b7cf-5720810b4159",
-    "buyerName": "Aлександр124",
-    "rating": 3,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+  "aadb0dba-b824-4376-b6ab-0f3d5a5a1003": {
+    "id": "aadb0dba-b824-4376-b6ab-0f3d5a5a1003",
+    "buyerName": "Ирина Смирнова",
+    "rating": 2,
+    "pros": "Их не много",
+    "cons": "",
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
+    "photosURL": [],
+    "isRefund": false
+  },
+  "acfa06eb-d222-46df-8ff7-a2026ce1865c": {
+    "id": "acfa06eb-d222-46df-8ff7-a2026ce1865c",
+    "buyerName": "Андрей Николаев",
+    "rating": 1,
+    "pros": "",
+    "cons": "",
+    "comment": "Пользуюсь недолго, пока никаких особых впечатлений нет. По качеству всё в пределах нормы. ",
     "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp",
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp"
+      "https://basket-17.wbbasket.ru/vol2699/part269922/269922591/images/big/2.webp"
     ],
     "isRefund": true
   },
-  "995a4a21-4cf6-45cb-bbfb-59dae1141505": {
-    "id": "995a4a21-4cf6-45cb-bbfb-59dae1141505",
-    "buyerName": "Aлександр333",
-    "rating": 2,
-    "pros": "Их не много",
-    "cons": "Никогда больше ничего у вас не куплю",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp",
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp",
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp"
-    ],
-    "isRefund": false
-  },
-  "a007fe21-d196-491a-9012-3c5c33ad64d4": {
-    "id": "a007fe21-d196-491a-9012-3c5c33ad64d4",
-    "buyerName": "Aлександр240",
-    "rating": 3,
-    "pros": "",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [],
-    "isRefund": false
-  },
-  "a38a44a0-b224-4244-9bf9-8aa4a674a2cd": {
-    "id": "a38a44a0-b224-4244-9bf9-8aa4a674a2cd",
-    "buyerName": "Aлександр761",
-    "rating": 1,
-    "pros": "Их не много",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp",
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp",
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp"
-    ],
-    "isRefund": false
-  },
-  "aba59e1e-f0ea-4358-ab66-ee1c076f6be2": {
-    "id": "aba59e1e-f0ea-4358-ab66-ee1c076f6be2",
-    "buyerName": "Aлександр581",
-    "rating": 1,
-    "pros": "Их не много",
-    "cons": "Никогда больше ничего у вас не куплю",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [],
-    "isRefund": false
-  },
-  "b23a03ce-ac65-4de5-a76e-4578d1d83873": {
-    "id": "b23a03ce-ac65-4de5-a76e-4578d1d83873",
-    "buyerName": "Aлександр637",
-    "rating": 1,
-    "pros": "",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp",
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp"
-    ],
-    "isRefund": false
-  },
-  "b3bc7878-1888-42bb-aad0-2006ad3bb3d7": {
-    "id": "b3bc7878-1888-42bb-aad0-2006ad3bb3d7",
-    "buyerName": "Aлександр498",
-    "rating": 2,
-    "pros": "Их не много",
-    "cons": "Никогда больше ничего у вас не куплю",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp"
-    ],
-    "isRefund": false
-  },
-  "b59184ad-85c7-420f-b422-58272e1178ff": {
-    "id": "b59184ad-85c7-420f-b422-58272e1178ff",
-    "buyerName": "Aлександр619",
+  "b0b8a085-22dd-47ee-9700-6cf6f695df85": {
+    "id": "b0b8a085-22dd-47ee-9700-6cf6f695df85",
+    "buyerName": "Виктория Павлова",
     "rating": 2,
     "pros": "",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp",
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp"
-    ],
-    "isRefund": false
-  },
-  "bc21cce1-faa6-4dfb-851c-ec3372754351": {
-    "id": "bc21cce1-faa6-4dfb-851c-ec3372754351",
-    "buyerName": "Aлександр850",
-    "rating": 4,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp",
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp",
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp"
-    ],
-    "isRefund": false
-  },
-  "bd74d2ce-2946-4122-913c-9ebebcd35757": {
-    "id": "bd74d2ce-2946-4122-913c-9ebebcd35757",
-    "buyerName": "Aлександр94",
-    "rating": 4,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "cons": "Ужасный товар, сплошное разочарование",
+    "comment": "Много времени заняло сравнение с конкурентами, супер много аналогов, но выбор пал на этот. По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. ",
     "photosURL": [],
     "isRefund": false
   },
-  "be0104e0-5f72-4fff-97ff-0bca37261e0b": {
-    "id": "be0104e0-5f72-4fff-97ff-0bca37261e0b",
-    "buyerName": "Aлександр763",
+  "b15f704b-49de-479f-b914-136cae6c128a": {
+    "id": "b15f704b-49de-479f-b914-136cae6c128a",
+    "buyerName": "Анна Петрова",
+    "rating": 1,
+    "pros": "Их не много",
+    "cons": "О, их так много, что и не описать",
+    "comment": "Пользуюсь недолго, пока никаких особых впечатлений нет. По качеству всё в пределах нормы. ",
+    "photosURL": [],
+    "isRefund": false
+  },
+  "b6cb2e18-4785-4a3b-ba22-9974df709a0e": {
+    "id": "b6cb2e18-4785-4a3b-ba22-9974df709a0e",
+    "buyerName": "Дмитрий Соколов",
     "rating": 2,
     "pros": "Их не много",
     "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [],
-    "isRefund": false
-  },
-  "c34c512e-5054-44dc-8eda-558d335428d2": {
-    "id": "c34c512e-5054-44dc-8eda-558d335428d2",
-    "buyerName": "Aлександр313",
-    "rating": 4,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "comment": "По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. ",
     "photosURL": [
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp"
+      "https://basket-10.wbbasket.ru/vol1511/part151190/151190621/images/big/1.webp",
+      "https://basket-11.wbbasket.ru/vol1625/part162546/162546677/images/big/2.webp",
+      "https://basket-11.wbbasket.ru/vol1625/part162546/162546677/images/big/2.webp"
     ],
     "isRefund": false
   },
-  "c3b249a5-931b-49bb-b9c6-a06ed616d141": {
-    "id": "c3b249a5-931b-49bb-b9c6-a06ed616d141",
-    "buyerName": "Aлександр689",
+  "b73e4370-d9b9-49ca-a1a9-b4aded21b1e4": {
+    "id": "b73e4370-d9b9-49ca-a1a9-b4aded21b1e4",
+    "buyerName": "Сергей Иванов",
+    "rating": 4,
+    "pros": "",
+    "cons": "",
+    "comment": "Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
+    "photosURL": [
+      "https://basket-15.wbbasket.ru/vol2405/part240554/240554144/images/big/3.webp",
+      "https://basket-15.wbbasket.ru/vol2405/part240554/240554144/images/big/4.webp"
+    ],
+    "isRefund": true
+  },
+  "b7ca879b-fdb9-49a9-9b2c-2eb2a5c93ffb": {
+    "id": "b7ca879b-fdb9-49a9-9b2c-2eb2a5c93ffb",
+    "buyerName": "Дмитрий Соколов",
+    "rating": 2,
+    "pros": "Их не много",
+    "cons": "Ужасный товар, сплошное разочарование",
+    "comment": "По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. ",
+    "photosURL": [
+      "https://basket-15.wbbasket.ru/vol2405/part240554/240554144/images/big/3.webp"
+    ],
+    "isRefund": false
+  },
+  "b982767c-ce89-442d-a2a8-3b86b051770c": {
+    "id": "b982767c-ce89-442d-a2a8-3b86b051770c",
+    "buyerName": "Мария Кузнецова",
+    "rating": 2,
+    "pros": "Их не много",
+    "cons": "О, их так много, что и не описать",
+    "comment": "Пока не понятно, насколько удобно, нужно больше времени. Обычная вещь, без лишних деталей. ",
+    "photosURL": [
+      "https://basket-26.wbbasket.ru/vol4665/part466522/466522013/images/big/1.webp",
+      "https://basket-15.wbbasket.ru/vol2405/part240554/240554144/images/big/3.webp",
+      "https://basket-26.wbbasket.ru/vol4665/part466522/466522013/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "bafad3bd-3883-4ff1-b1bf-90a1ef79ee94": {
+    "id": "bafad3bd-3883-4ff1-b1bf-90a1ef79ee94",
+    "buyerName": "Ольга Морозова",
+    "rating": 4,
+    "pros": "Выглядит аккуратно и без лишних деталей",
+    "cons": "При получении заметил(а) мелкие недочёты",
+    "comment": "Пока не понятно, насколько удобно, нужно больше времени. Обычная вещь, без лишних деталей. ",
+    "photosURL": [
+      "https://basket-16.wbbasket.ru/vol2484/part248439/248439960/images/big/1.webp",
+      "https://basket-11.wbbasket.ru/vol1625/part162546/162546677/images/big/2.webp",
+      "https://basket-10.wbbasket.ru/vol1511/part151190/151190621/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "bb7aa974-15e2-4dc2-bd3b-6838150cc7cd": {
+    "id": "bb7aa974-15e2-4dc2-bd3b-6838150cc7cd",
+    "buyerName": "Мария Кузнецова",
+    "rating": 4,
+    "pros": "",
+    "cons": "",
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
+    "photosURL": [
+      "https://basket-12.wbbasket.ru/vol1712/part171222/171222754/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "bb92a72f-0027-4560-a468-16943ea5b1a8": {
+    "id": "bb92a72f-0027-4560-a468-16943ea5b1a8",
+    "buyerName": "Вера",
+    "rating": 1,
+    "pros": "Их не много",
+    "cons": "Ужасный товар, сплошное разочарование",
+    "comment": "По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. ",
+    "photosURL": [],
+    "isRefund": true
+  },
+  "bcaf5571-4a9f-418a-9de0-41b0d9627c84": {
+    "id": "bcaf5571-4a9f-418a-9de0-41b0d9627c84",
+    "buyerName": "Ирина Смирнова",
+    "rating": 4,
+    "pros": "Цена показалась адекватной за полученное качество",
+    "cons": "Цена кажется слегка завышенной",
+    "comment": "По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
+    "photosURL": [
+      "https://basket-16.wbbasket.ru/vol2501/part250150/250150130/images/big/1.webp",
+      "https://basket-26.wbbasket.ru/vol4583/part458372/458372626/images/big/1.webp"
+    ],
+    "isRefund": true
+  },
+  "be09cf27-80cf-4c0c-b97e-20cc960e328b": {
+    "id": "be09cf27-80cf-4c0c-b97e-20cc960e328b",
+    "buyerName": "Татьяна Мельникова",
+    "rating": 1,
+    "pros": "Их не много",
+    "cons": "",
+    "comment": "Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
+    "photosURL": [],
+    "isRefund": false
+  },
+  "bf5242fb-b35e-4ac1-9a05-ac09ee2af095": {
+    "id": "bf5242fb-b35e-4ac1-9a05-ac09ee2af095",
+    "buyerName": "Виктория Павлова",
     "rating": 1,
     "pros": "Их не много",
     "cons": "Никогда больше ничего у вас не куплю",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [],
-    "isRefund": false
-  },
-  "c6777370-608e-4e7b-9869-c62b85bcf433": {
-    "id": "c6777370-608e-4e7b-9869-c62b85bcf433",
-    "buyerName": "Aлександр396",
-    "rating": 4,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
     "photosURL": [
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp"
+      "https://basket-18.wbbasket.ru/vol3047/part304775/304775028/images/big/3.webp"
     ],
     "isRefund": false
   },
-  "c698270f-7de9-49bb-93e3-5b9b35355301": {
-    "id": "c698270f-7de9-49bb-93e3-5b9b35355301",
-    "buyerName": "Aлександр671",
-    "rating": 3,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [],
-    "isRefund": false
-  },
-  "c8f9991c-51ff-4428-9713-3b7ea6e6148b": {
-    "id": "c8f9991c-51ff-4428-9713-3b7ea6e6148b",
-    "buyerName": "Aлександр826",
+  "bfee28e5-9267-49b6-9d85-3e2c1bc26318": {
+    "id": "bfee28e5-9267-49b6-9d85-3e2c1bc26318",
+    "buyerName": "Михаил Крылов",
     "rating": 3,
     "pros": "",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "cons": "Упаковка могла быть надёжнее",
+    "comment": "Много времени заняло сравнение с конкурентами, супер много аналогов, но выбор пал на этот. ",
     "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp",
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp",
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp"
+      "https://basket-26.wbbasket.ru/vol4777/part477756/477756673/images/big/1.webp",
+      "https://basket-18.wbbasket.ru/vol3047/part304775/304775028/images/big/2.webp"
+    ],
+    "isRefund": true
+  },
+  "c3d2041e-28fb-4ec6-b914-8a249c0495d9": {
+    "id": "c3d2041e-28fb-4ec6-b914-8a249c0495d9",
+    "buyerName": "Ирина Смирнова",
+    "rating": 2,
+    "pros": "Их не много",
+    "cons": "О, их так много, что и не описать",
+    "comment": "Пользуюсь недолго, пока никаких особых впечатлений нет. По качеству всё в пределах нормы. ",
+    "photosURL": [
+      "https://basket-16.wbbasket.ru/vol2581/part258124/258124707/images/big/1.webp",
+      "https://basket-12.wbbasket.ru/vol1712/part171222/171222754/images/big/1.webp",
+      "https://basket-21.wbbasket.ru/vol3533/part353384/353384700/images/big/1.webp"
     ],
     "isRefund": false
   },
-  "c952f395-22d1-46ae-8fb2-a31c082aa8cb": {
-    "id": "c952f395-22d1-46ae-8fb2-a31c082aa8cb",
-    "buyerName": "Aлександр433",
+  "c7bda0f6-8fa4-4972-b900-4b055f58eb1e": {
+    "id": "c7bda0f6-8fa4-4972-b900-4b055f58eb1e",
+    "buyerName": "Emily R.",
+    "rating": 1,
+    "pros": "Их не много",
+    "cons": "",
+    "comment": "Пока не понятно, насколько удобно, нужно больше времени. Обычная вещь, без лишних деталей. ",
+    "photosURL": [
+      "https://basket-26.wbbasket.ru/vol4665/part466522/466522013/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "cfee5a65-aae0-4695-8f52-9f3bec6c8cd2": {
+    "id": "cfee5a65-aae0-4695-8f52-9f3bec6c8cd2",
+    "buyerName": "Николай Федоров",
     "rating": 3,
     "pros": "",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "cons": "",
+    "comment": "Много времени заняло сравнение с конкурентами, супер много аналогов, но выбор пал на этот. ",
     "photosURL": [
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp",
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp"
+      "https://basket-05.wbbasket.ru/vol963/part96316/96316155/images/big/3.webp",
+      "https://basket-26.wbbasket.ru/vol4806/part480669/480669352/images/big/2.webp"
     ],
     "isRefund": false
   },
-  "c9678c5a-e953-4500-8eed-d9cdafe74ff8": {
-    "id": "c9678c5a-e953-4500-8eed-d9cdafe74ff8",
-    "buyerName": "Aлександр229",
+  "d1e50aa0-2736-43ad-8f5e-4182108e4edf": {
+    "id": "d1e50aa0-2736-43ad-8f5e-4182108e4edf",
+    "buyerName": "Виктория Павлова",
     "rating": 1,
     "pros": "Их не много",
     "cons": "Никогда больше ничего у вас не куплю",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
     "photosURL": [
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp"
+      "https://basket-10.wbbasket.ru/vol1511/part151190/151190621/images/big/1.webp",
+      "https://basket-19.wbbasket.ru/vol3178/part317854/317854683/images/big/3.webp",
+      "https://basket-17.wbbasket.ru/vol2679/part267903/267903164/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "d26f79cb-606b-4ee2-9218-99b96ae50b30": {
+    "id": "d26f79cb-606b-4ee2-9218-99b96ae50b30",
+    "buyerName": "Лена",
+    "rating": 3,
+    "pros": "Всё пришло целое, без повреждений",
+    "cons": "Доставка заняла больше времени, чем хотелось бы",
+    "comment": "Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
+    "photosURL": [
+      "https://basket-26.wbbasket.ru/vol4665/part466522/466522013/images/big/1.webp",
+      "https://basket-15.wbbasket.ru/vol2405/part240554/240554144/images/big/3.webp",
+      "https://basket-26.wbbasket.ru/vol4665/part466522/466522013/images/big/1.webp"
     ],
     "isRefund": true
   },
-  "cf773513-d079-4d20-9fd2-d628d6167274": {
-    "id": "cf773513-d079-4d20-9fd2-d628d6167274",
-    "buyerName": "Aлександр273",
+  "d4dd7123-5a60-4c24-8439-a46f874517a1": {
+    "id": "d4dd7123-5a60-4c24-8439-a46f874517a1",
+    "buyerName": "Ольга Морозова",
     "rating": 1,
-    "pros": "",
-    "cons": "Никогда больше ничего у вас не куплю",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp",
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp",
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp"
-    ],
-    "isRefund": false
-  },
-  "d7db3f7d-5e41-416e-8977-4a27fdf97b9f": {
-    "id": "d7db3f7d-5e41-416e-8977-4a27fdf97b9f",
-    "buyerName": "Aлександр370",
-    "rating": 3,
-    "pros": "",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp",
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp",
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp"
-    ],
-    "isRefund": false
-  },
-  "db66e8e0-6789-4180-be79-6064d96aac80": {
-    "id": "db66e8e0-6789-4180-be79-6064d96aac80",
-    "buyerName": "Aлександр383",
-    "rating": 4,
-    "pros": "",
+    "pros": "Их не много",
     "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "comment": "Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
     "photosURL": [],
     "isRefund": true
   },
-  "dbf2092c-b2c3-47f5-913f-e7e157444d16": {
-    "id": "dbf2092c-b2c3-47f5-913f-e7e157444d16",
-    "buyerName": "Aлександр919",
+  "d5209965-49bb-484a-bf83-8c44cc83de37": {
+    "id": "d5209965-49bb-484a-bf83-8c44cc83de37",
+    "buyerName": "Николай Федоров",
     "rating": 2,
     "pros": "Их не много",
     "cons": "Никогда больше ничего у вас не куплю",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "comment": "Товар как товар, ожидания совпали с реальностью, на фото все видно. По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. ",
+    "photosURL": [],
+    "isRefund": false
+  },
+  "d646bbf1-d475-4bef-bb86-b69a167292b2": {
+    "id": "d646bbf1-d475-4bef-bb86-b69a167292b2",
+    "buyerName": "Андрей Николаев",
+    "rating": 4,
+    "pros": "Цена показалась адекватной за полученное качество",
+    "cons": "",
+    "comment": "Много времени заняло сравнение с конкурентами, супер много аналогов, но выбор пал на этот. По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. ",
     "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp",
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp"
+      "https://basket-12.wbbasket.ru/vol1712/part171222/171222754/images/big/1.webp",
+      "https://basket-16.wbbasket.ru/vol2501/part250150/250150130/images/big/1.webp"
     ],
     "isRefund": false
   },
-  "e0bcac22-5f22-44d5-b1c1-a92503354cb6": {
-    "id": "e0bcac22-5f22-44d5-b1c1-a92503354cb6",
-    "buyerName": "Aлександр436",
-    "rating": 1,
-    "pros": "",
-    "cons": "Никогда больше ничего у вас не куплю",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+  "d7637adf-16d6-4058-816a-18f2eec011ff": {
+    "id": "d7637adf-16d6-4058-816a-18f2eec011ff",
+    "buyerName": "Сергей Иванов",
+    "rating": 3,
+    "pros": "Всё пришло целое, без повреждений",
+    "cons": "При получении заметил(а) мелкие недочёты",
+    "comment": "Много времени заняло сравнение с конкурентами, супер много аналогов, но выбор пал на этот. Пользуюсь недолго, пока никаких особых впечатлений нет. По качеству всё в пределах нормы. ",
     "photosURL": [],
-    "isRefund": true
+    "isRefund": false
   },
-  "e2b9bf96-c3ea-4cb1-99c1-c1e4cbf60c46": {
-    "id": "e2b9bf96-c3ea-4cb1-99c1-c1e4cbf60c46",
-    "buyerName": "Aлександр111",
+  "d8a40d93-9c92-4880-b501-7a67721049b9": {
+    "id": "d8a40d93-9c92-4880-b501-7a67721049b9",
+    "buyerName": "Николай Федоров",
+    "rating": 2,
+    "pros": "Их не много",
+    "cons": "",
+    "comment": "Пользуюсь недолго, пока никаких особых впечатлений нет. По качеству всё в пределах нормы. ",
+    "photosURL": [
+      "https://basket-10.wbbasket.ru/vol1314/part131439/131439248/images/big/3.webp"
+    ],
+    "isRefund": false
+  },
+  "d906d130-db10-47b1-82ba-9b7579254a85": {
+    "id": "d906d130-db10-47b1-82ba-9b7579254a85",
+    "buyerName": "Мария Кузнецова",
+    "rating": 4,
+    "pros": "",
+    "cons": "",
+    "comment": "Пока не понятно, насколько удобно, нужно больше времени. Обычная вещь, без лишних деталей. ",
+    "photosURL": [
+      "https://basket-18.wbbasket.ru/vol3047/part304775/304775028/images/big/2.webp",
+      "https://basket-19.wbbasket.ru/vol3153/part315358/315358478/images/big/6.webp",
+      "https://basket-19.wbbasket.ru/vol3153/part315358/315358478/images/big/6.webp"
+    ],
+    "isRefund": false
+  },
+  "ddd1e6ab-ae1c-4125-826f-d33586fc904e": {
+    "id": "ddd1e6ab-ae1c-4125-826f-d33586fc904e",
+    "buyerName": "Emily R.",
+    "rating": 4,
+    "pros": "Всё пришло целое, без повреждений",
+    "cons": "Цена кажется слегка завышенной",
+    "comment": "По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. ",
+    "photosURL": [
+      "https://basket-25.wbbasket.ru/vol4458/part445898/445898947/images/big/1.webp",
+      "https://basket-26.wbbasket.ru/vol4583/part458372/458372626/images/big/1.webp",
+      "https://basket-12.wbbasket.ru/vol1712/part171222/171222754/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "de267693-8a02-4cd4-840b-91c8bd677ca2": {
+    "id": "de267693-8a02-4cd4-840b-91c8bd677ca2",
+    "buyerName": "Алексей Волков",
     "rating": 1,
     "pros": "Их не много",
-    "cons": "Никогда больше ничего у вас не куплю",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp",
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp",
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp"
-    ],
-    "isRefund": true
-  },
-  "e58481d7-0e48-4996-a0eb-93d7ea3a1231": {
-    "id": "e58481d7-0e48-4996-a0eb-93d7ea3a1231",
-    "buyerName": "Aлександр275",
-    "rating": 3,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp",
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp",
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp"
-    ],
-    "isRefund": false
-  },
-  "e7a56e2f-3879-4e06-a7c5-27d07c790da7": {
-    "id": "e7a56e2f-3879-4e06-a7c5-27d07c790da7",
-    "buyerName": "Aлександр889",
-    "rating": 1,
-    "pros": "",
     "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "comment": "Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
     "photosURL": [],
     "isRefund": false
   },
-  "e8c5f333-6f5f-4e7b-ae2b-eb41a4375ed0": {
-    "id": "e8c5f333-6f5f-4e7b-ae2b-eb41a4375ed0",
-    "buyerName": "Aлександр696",
-    "rating": 2,
-    "pros": "",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp",
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp"
-    ],
-    "isRefund": false
-  },
-  "fb6457ac-2738-4e20-9f5f-0dc1b8b503e6": {
-    "id": "fb6457ac-2738-4e20-9f5f-0dc1b8b503e6",
-    "buyerName": "Aлександр585",
-    "rating": 4,
-    "pros": "Товар хороший, можно брать, я вот взял",
-    "cons": "НУ в принципе их нет",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
-    "photosURL": [
-      "https://basket-16.wbbasket.ru/vol2619/part261968/261968456/images/big/1.webp",
-      "https://basket-09.wbbasket.ru/vol1207/part120753/120753915/images/big/1.webp"
-    ],
-    "isRefund": false
-  },
-  "fd01db69-2ef6-404a-8e1f-5a6290f8506a": {
-    "id": "fd01db69-2ef6-404a-8e1f-5a6290f8506a",
-    "buyerName": "Aлександр164",
+  "e0105378-cf00-4ad5-b267-94dc6d395db4": {
+    "id": "e0105378-cf00-4ad5-b267-94dc6d395db4",
+    "buyerName": "Вера",
     "rating": 1,
     "pros": "",
-    "cons": "",
-    "comment": "Скоро я закажу себе всю корзину вб и отзывы станут полнее, но пока вот так",
+    "cons": "Никогда больше ничего у вас не куплю",
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
     "photosURL": [
-      "https://basket-22.wbbasket.ru/vol3704/part370494/370494201/images/big/2.webp",
-      "https://basket-16.wbbasket.ru/vol2574/part257400/257400077/images/big/11.webp"
+      "https://basket-16.wbbasket.ru/vol2501/part250150/250150130/images/big/1.webp",
+      "https://basket-16.wbbasket.ru/vol2501/part250150/250150130/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "e06ae512-a054-430c-8455-d78a0d60b038": {
+    "id": "e06ae512-a054-430c-8455-d78a0d60b038",
+    "buyerName": "Татьяна Мельникова",
+    "rating": 2,
+    "pros": "Их не много",
+    "cons": "Никогда больше ничего у вас не куплю",
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. ",
+    "photosURL": [
+      "https://basket-16.wbbasket.ru/vol2581/part258124/258124707/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "e3264958-6b78-472c-9284-41ee40756f32": {
+    "id": "e3264958-6b78-472c-9284-41ee40756f32",
+    "buyerName": "Николай Федоров",
+    "rating": 4,
+    "pros": "",
+    "cons": "",
+    "comment": "Много времени заняло сравнение с конкурентами, супер много аналогов, но выбор пал на этот. ",
+    "photosURL": [
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/9.webp",
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/10.webp",
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/9.webp"
+    ],
+    "isRefund": false
+  },
+  "e372d554-4387-47eb-bcac-9f70c873e919": {
+    "id": "e372d554-4387-47eb-bcac-9f70c873e919",
+    "buyerName": "Алексей Волков",
+    "rating": 1,
+    "pros": "Их не много",
+    "cons": "О, их так много, что и не описать",
+    "comment": "Пока не понятно, насколько удобно, нужно больше времени. Обычная вещь, без лишних деталей. ",
+    "photosURL": [],
+    "isRefund": false
+  },
+  "e3f8b56d-66c3-4f04-bb96-cb6d6aca6921": {
+    "id": "e3f8b56d-66c3-4f04-bb96-cb6d6aca6921",
+    "buyerName": "Николай Федоров",
+    "rating": 4,
+    "pros": "Всё пришло целое, без повреждений",
+    "cons": "Доставка заняла больше времени, чем хотелось бы",
+    "comment": "Пользуюсь недолго, пока никаких особых впечатлений нет. По качеству всё в пределах нормы. ",
+    "photosURL": [
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/8.webp",
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/10.webp",
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/9.webp"
+    ],
+    "isRefund": false
+  },
+  "e88b5314-a417-4d0b-af88-6770b93d69b4": {
+    "id": "e88b5314-a417-4d0b-af88-6770b93d69b4",
+    "buyerName": "Анна Петрова",
+    "rating": 1,
+    "pros": "",
+    "cons": "Ужасный товар, сплошное разочарование",
+    "comment": "Доставка даже опередила ожидания, супер быстро, даже очереди в пункте выдачи не было. По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. ",
+    "photosURL": [
+      "https://basket-16.wbbasket.ru/vol2581/part258124/258124707/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "ebe665ed-c017-4c92-ae6b-2fbfef07cfd9": {
+    "id": "ebe665ed-c017-4c92-ae6b-2fbfef07cfd9",
+    "buyerName": "Виктория Павлова",
+    "rating": 4,
+    "pros": "",
+    "cons": "Некоторые детали показались не очень качественными",
+    "comment": "Пользуюсь недолго, пока никаких особых впечатлений нет. По качеству всё в пределах нормы. ",
+    "photosURL": [
+      "https://basket-25.wbbasket.ru/vol4458/part445898/445898947/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "ecfa6ce6-06a7-4c42-997e-e256efce3174": {
+    "id": "ecfa6ce6-06a7-4c42-997e-e256efce3174",
+    "buyerName": "Михаил Крылов",
+    "rating": 4,
+    "pros": "Цена показалась адекватной за полученное качество",
+    "cons": "",
+    "comment": "Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
+    "photosURL": [
+      "https://basket-16.wbbasket.ru/vol2581/part258124/258124707/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "f284c39d-7ac8-4843-a6b7-6810213a74aa": {
+    "id": "f284c39d-7ac8-4843-a6b7-6810213a74aa",
+    "buyerName": "Лена",
+    "rating": 4,
+    "pros": "Идеально подошло, радости моей нет предела",
+    "cons": "",
+    "comment": "Много времени заняло сравнение с конкурентами, супер много аналогов, но выбор пал на этот. ",
+    "photosURL": [
+      "https://basket-12.wbbasket.ru/vol1712/part171222/171222754/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "f6889d9b-f7cd-4254-8340-b6a8e1bcdaef": {
+    "id": "f6889d9b-f7cd-4254-8340-b6a8e1bcdaef",
+    "buyerName": "Алексей Волков",
+    "rating": 1,
+    "pros": "Их не много",
+    "cons": "О, их так много, что и не описать",
+    "comment": "Товар как товар, ожидания совпали с реальностью, на фото все видно. ",
+    "photosURL": [],
+    "isRefund": false
+  },
+  "f73c81ca-4b71-4286-b7e9-369133190916": {
+    "id": "f73c81ca-4b71-4286-b7e9-369133190916",
+    "buyerName": "Лена",
+    "rating": 2,
+    "pros": "Их не много",
+    "cons": "",
+    "comment": "По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. ",
+    "photosURL": [],
+    "isRefund": true
+  },
+  "f773607c-8164-4deb-9748-7ff60a15b3f8": {
+    "id": "f773607c-8164-4deb-9748-7ff60a15b3f8",
+    "buyerName": "Ольга Морозова",
+    "rating": 3,
+    "pros": "Цена показалась адекватной за полученное качество",
+    "cons": "Доставка заняла больше времени, чем хотелось бы",
+    "comment": "Много времени заняло сравнение с конкурентами, супер много аналогов, но выбор пал на этот. ",
+    "photosURL": [],
+    "isRefund": false
+  },
+  "f96b2869-99ab-4528-84d0-a886ac781a64": {
+    "id": "f96b2869-99ab-4528-84d0-a886ac781a64",
+    "buyerName": "Анна Петрова",
+    "rating": 3,
+    "pros": "Работает стабильно, без перебоев",
+    "cons": "Некоторые детали показались не очень качественными",
+    "comment": "Пользуюсь недолго, пока никаких особых впечатлений нет. По качеству всё в пределах нормы. ",
+    "photosURL": [
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/9.webp",
+      "https://basket-15.wbbasket.ru/vol2271/part227133/227133697/images/big/8.webp"
+    ],
+    "isRefund": false
+  },
+  "fa6bacd5-26f8-44f9-8622-d1f395e69294": {
+    "id": "fa6bacd5-26f8-44f9-8622-d1f395e69294",
+    "buyerName": "Елена Васильева",
+    "rating": 1,
+    "pros": "",
+    "cons": "Никогда больше ничего у вас не куплю",
+    "comment": "По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться. ",
+    "photosURL": [
+      "https://basket-11.wbbasket.ru/vol1625/part162546/162546677/images/big/2.webp",
+      "https://basket-16.wbbasket.ru/vol2484/part248439/248439960/images/big/1.webp",
+      "https://basket-16.wbbasket.ru/vol2484/part248439/248439960/images/big/1.webp"
+    ],
+    "isRefund": false
+  },
+  "fc86d569-0539-452f-93ed-71f5e43b25cb": {
+    "id": "fc86d569-0539-452f-93ed-71f5e43b25cb",
+    "buyerName": "Татьяна Мельникова",
+    "rating": 1,
+    "pros": "Их не много",
+    "cons": "",
+    "comment": "Пока не понятно, насколько удобно, нужно больше времени. Обычная вещь, без лишних деталей. Много времени заняло сравнение с конкурентами, супер много аналогов, но выбор пал на этот. ",
+    "photosURL": [],
+    "isRefund": false
+  },
+  "fcffcfb4-7bf9-49a4-9566-38c27f308b86": {
+    "id": "fcffcfb4-7bf9-49a4-9566-38c27f308b86",
+    "buyerName": "Дмитрий Соколов",
+    "rating": 2,
+    "pros": "Их не много",
+    "cons": "",
+    "comment": "Пока не понятно, насколько удобно, нужно больше времени. Обычная вещь, без лишних деталей. ",
+    "photosURL": [
+      "https://basket-16.wbbasket.ru/vol2581/part258124/258124707/images/big/1.webp"
     ],
     "isRefund": false
   }

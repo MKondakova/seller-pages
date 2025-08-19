@@ -11,7 +11,8 @@ import (
 
 	"github.com/golang-jwt/jwt/v5"
 	"go.uber.org/zap"
-	"seller-pages-wb/internal/models"
+
+	"seller-pages/internal/models"
 )
 
 var (

@@ -1,4 +1,4 @@
-module seller-pages-wb
+module seller-pages
 
 go 1.24
 

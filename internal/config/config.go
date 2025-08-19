@@ -4,14 +4,20 @@ import (
 	"crypto/rsa"
 	"crypto/x509"
 	"encoding/hex"
+	"encoding/json"
 	"encoding/pem"
 	"errors"
 	"fmt"
+	"io"
+	"os"
 	"reflect"
 	"strings"
 
 	"github.com/caarlos0/env/v11"
 	"github.com/golang-jwt/jwt/v5"
+	"go.uber.org/zap"
+
+	"seller-pages/internal/models"
 )
 
 var (
@@ -27,13 +33,14 @@ type Config struct {
 
 	RevokedTokens []string
 
+	InitialProductsData []models.Product
+
 	ServerOpts        ServerOpts
-	ProductsPath      string
 	FeedbacksPath     string
 	CreatedTokensPath string
 }
 
-func GetConfig() (*Config, error) {
+func GetConfig(logger *zap.SugaredLogger) (*Config, error) {
 	cfg := &Config{
 		ListenPort: ":8080",
 		ServerOpts: ServerOpts{
@@ -42,10 +49,23 @@ func GetConfig() (*Config, error) {
 			IdleTimeout:          60,
 			MaxRequestBodySizeMb: 1,
 		},
-		ProductsPath:      "data/products.json",
 		CreatedTokensPath: "data/created_tokens.json",
 		RevokedTokens:     []string{},
 	}
+
+	products, err := getInitData[models.Product]("data/products.json", logger)
+	if err != nil {
+		return nil, fmt.Errorf("can't get initial products: %w", err)
+	}
+
+	cfg.InitialProductsData = products
+
+	bannedTokens, err := getInitData[string]("data/bannedTokens.json", logger)
+	if err != nil {
+		return nil, fmt.Errorf("can't get banned tokens: %w", err)
+	}
+
+	cfg.RevokedTokens = bannedTokens
 
 	opts := env.Options{
 		FuncMap: map[reflect.Type]env.ParserFunc{
@@ -54,7 +74,7 @@ func GetConfig() (*Config, error) {
 		},
 	}
 
-	err := env.ParseWithOptions(cfg, opts)
+	err = env.ParseWithOptions(cfg, opts)
 	if err != nil {
 		return nil, fmt.Errorf("env.ParseWithOptions: %w", err)
 	}
@@ -121,4 +141,33 @@ func ParseRSAPublicKey(content []byte) (*rsa.PublicKey, error) {
 	}
 
 	return public, nil
+}
+
+type loadable interface {
+	string | models.Product
+}
+
+func getInitData[T loadable](filePath string, logger *zap.SugaredLogger) ([]T, error) {
+	file, err := os.Open(filePath)
+	if err != nil {
+		return nil, fmt.Errorf("failed to open file: %w", err)
+	}
+	defer func(file *os.File) {
+		err := file.Close()
+		if err != nil {
+			logger.Errorf("Error while closing data file: %v", err)
+		}
+	}(file)
+
+	bytes, err := io.ReadAll(file)
+	if err != nil {
+		return nil, fmt.Errorf("failed to read file: %w", err)
+	}
+
+	var data []T
+	if err := json.Unmarshal(bytes, &data); err != nil {
+		return nil, fmt.Errorf("failed to parse JSON: %w", err)
+	}
+
+	return data, nil
 }

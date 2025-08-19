@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"time"
 
-	"seller-pages-wb/internal/config"
-	"seller-pages-wb/internal/models"
+	"seller-pages/internal/config"
+	"seller-pages/internal/models"
 
 	"github.com/rs/cors"
 	"go.uber.org/zap"

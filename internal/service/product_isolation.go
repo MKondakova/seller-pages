@@ -2,7 +2,7 @@ package service
 
 import (
 	"context"
-	"seller-pages-wb/internal/models"
+	"seller-pages/internal/models"
 	"sync"
 
 	"go.uber.org/zap"
