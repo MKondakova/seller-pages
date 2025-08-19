@@ -2,13 +2,18 @@ package application
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
+	"io"
+	"os"
+	"seller-pages-wb/internal/models"
 	"sync"
 
-	"go.uber.org/zap"
 	"seller-pages-wb/internal/api"
 	"seller-pages-wb/internal/service"
 	"seller-pages-wb/pkg/runner"
+
+	"go.uber.org/zap"
 
 	"seller-pages-wb/internal/config"
 )
@@ -16,7 +21,7 @@ import (
 type Application struct {
 	cfg *config.Config
 
-	productService  *service.ProductService
+	productService  *service.ProductIsolationService
 	balanceService  *service.BalanceService
 	tokenService    *service.TokenService
 	feedbackService *service.FeedbackService
@@ -144,15 +149,43 @@ func (a *Application) initServices() error {
 	if err != nil {
 		return fmt.Errorf("can't create feedback service: %w", err)
 	}
-	a.productService, err = service.NewProductService(a.cfg.ProductsPath, a.feedbackService)
+
+	products, err := getInitProducts(a.cfg.ProductsPath, a.logger)
 	if err != nil {
-		return fmt.Errorf("can't create product service: %w", err)
+		return fmt.Errorf("can't get init products: %w", err)
 	}
+
+	a.productService = service.NewProductIsolationService(products, a.feedbackService, a.logger)
 
 	a.balanceService = service.NewBalanceService()
 	a.tokenService = service.NewTokenService(a.cfg.PrivateKey, a.cfg.CreatedTokensPath)
 
 	return nil
+}
+
+func getInitProducts(productsPath string, logger *zap.SugaredLogger) ([]models.Product, error) {
+	file, err := os.Open(productsPath)
+	if err != nil {
+		return nil, fmt.Errorf("failed to open file: %w", err)
+	}
+	defer func(file *os.File) {
+		err := file.Close()
+		if err != nil {
+			logger.Errorf("Error while closing products file: %v", err)
+		}
+	}(file)
+
+	bytes, err := io.ReadAll(file)
+	if err != nil {
+		return nil, fmt.Errorf("failed to read file: %w", err)
+	}
+
+	var products []models.Product
+	if err := json.Unmarshal(bytes, &products); err != nil {
+		return nil, fmt.Errorf("failed to parse JSON: %w", err)
+	}
+
+	return products, nil
 }
 
 func (a *Application) initRouter(ctx context.Context) error {

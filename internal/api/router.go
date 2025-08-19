@@ -9,10 +9,11 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/rs/cors"
-	"go.uber.org/zap"
 	"seller-pages-wb/internal/config"
 	"seller-pages-wb/internal/models"
+
+	"github.com/rs/cors"
+	"go.uber.org/zap"
 )
 
 var (
@@ -22,11 +23,11 @@ var (
 )
 
 type ProductsService interface {
-	GetProductsList(page int) ([]models.ProductPreview, int)
-	GetProductByID(id string) (models.ProductPageInfo, error)
-	AddProduct() models.ProductPreview
-	DeleteProductByID(productID string) error
-	GetProductsWithFeedbacks(page int) ([]models.FeedbackPageInfo, int)
+	GetProductsList(ctx context.Context, page int) ([]models.ProductPreview, int)
+	GetProductByID(ctx context.Context, id string) (models.ProductPageInfo, error)
+	AddProduct(ctx context.Context) models.ProductPreview
+	DeleteProductByID(ctx context.Context, productID string) error
+	GetProductsWithFeedbacks(ctx context.Context, page int) ([]models.FeedbackPageInfo, int)
 }
 
 type BalanceService interface {
@@ -148,7 +149,7 @@ func (r *Router) getProductsList(writer http.ResponseWriter, request *http.Reque
 		return
 	}
 
-	result, totalPages := r.productsService.GetProductsList(page)
+	result, totalPages := r.productsService.GetProductsList(request.Context(), page)
 
 	responseBody := PaginatedResponse[models.ProductPreview]{
 		TotalPages: totalPages,
@@ -174,7 +175,7 @@ func (r *Router) getProductByID(writer http.ResponseWriter, request *http.Reques
 		return
 	}
 
-	product, err := r.productsService.GetProductByID(id)
+	product, err := r.productsService.GetProductByID(request.Context(), id)
 	if err != nil {
 		r.sendErrorResponse(writer, request, fmt.Errorf("GetProductByID: %w", err))
 
@@ -206,7 +207,7 @@ func (r *Router) getBalanceInfo(writer http.ResponseWriter, request *http.Reques
 }
 
 func (r *Router) addProduct(writer http.ResponseWriter, request *http.Request) {
-	responseBody := r.productsService.AddProduct()
+	responseBody := r.productsService.AddProduct(request.Context())
 
 	buf, err := json.Marshal(responseBody)
 	if err != nil {
@@ -226,7 +227,7 @@ func (r *Router) deleteProductByID(writer http.ResponseWriter, request *http.Req
 		return
 	}
 
-	err := r.productsService.DeleteProductByID(id)
+	err := r.productsService.DeleteProductByID(request.Context(), id)
 	if err != nil {
 		r.sendErrorResponse(writer, request, fmt.Errorf("GetProductByID: %w", err))
 
@@ -280,7 +281,7 @@ func (r *Router) getFeedbacks(writer http.ResponseWriter, request *http.Request)
 		return
 	}
 
-	result, totalPages := r.productsService.GetProductsWithFeedbacks(page)
+	result, totalPages := r.productsService.GetProductsWithFeedbacks(request.Context(), page)
 
 	responseBody := PaginatedResponse[models.FeedbackPageInfo]{
 		TotalPages: totalPages,
