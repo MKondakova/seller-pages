@@ -82,6 +82,7 @@ func (s *FeedbackService) GetFeedbacks(product models.Product) models.FeedbackPa
 	result := models.FeedbackPageInfo{
 		ID:             product.ID,
 		Name:           product.Name,
+		ImageURL:       product.ImageURL,
 		Rating:         product.Rating,
 		OrdersCount:    product.OrdersCount,
 		RefundsPercent: product.RefundsPercent,

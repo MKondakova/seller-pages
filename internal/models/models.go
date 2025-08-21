@@ -101,6 +101,7 @@ type SalePoint struct {
 
 type FeedbackPageInfo struct {
 	ID             string      `json:"id"`
+	ImageURL       string      `json:"imageUrl"`
 	Name           string      `json:"name"`
 	Rating         float64     `json:"rating,omitempty"`
 	OrdersCount    int         `json:"ordersCount"`
