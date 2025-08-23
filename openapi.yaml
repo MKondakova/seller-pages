@@ -1,0 +1,449 @@
+openapi: 3.0.0
+info:
+  title: seller-pages
+  description: 'Бекенд для андройд приложения'
+  version: 1.0.0
+tags: [ ]
+paths:
+  /api/products:
+    get:
+      summary: Получение списка товаров
+      description: 'Получение информации о товарах для главного экрана'
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+        - name: page
+          in: query
+          description: 'Номер страницы'
+          required: false
+          schema:
+            type:
+              integer
+      tags: [ Товары ]
+      responses:
+        '200':
+          description: 'Успешный ответ'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  currentPage:
+                    type: integer
+                  totalPages:
+                    type: integer
+                  Data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/MainPageProduct'
+                required:
+                  - currentPage
+                  - totalPages
+                  - Data
+                example:
+                  currentPage: 1
+                  totalPages: 2
+                  Data:
+                    - id: ab19936e-9155-43d4-aaf7-6dacbdc668ce
+                      name: Крем для тела
+                      article: 3080366669
+                      category: Косметика
+                      imageUrl: basket-17.wbbasket.ru/vol2679/part267903/267903164/images/big/1.webp
+                      isRemovable: true
+                      oldPrice: 670.1064369190367
+                      price: 416.8376802162891
+        '400':
+          $ref: '#/components/responses/400'
+        '401':
+          $ref: '#/components/responses/401'
+      security: [ ]
+  /api/products/generate:
+    post:
+      summary: Создание товара
+      description: 'Метод добавляет новый товар в базу и возвращает информацию о товаре для главного экрана'
+      tags: [ Товары ]
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+      responses:
+        '200':
+          description: 'Успешный ответ, товар добавлен'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MainPageProduct'
+              example:
+                id: ab19936e-9155-43d4-aaf7-6dacbdc668ce,
+                name: Крем для тела,
+                article: 3080366669,
+                category: Косметика,
+                imageUrl: basket-17.wbbasket.ru/vol2679/part267903/267903164/images/big/1.webp,
+                isRemovable: true,
+                oldPrice: 670.1064369190367,
+                price: 416.8376802162891
+          headers: { }
+        '401':
+          $ref: '#/components/responses/401'
+      security: [ ]
+  /api/products/{id}:
+    post:
+      summary: Получение полной информации о товаре
+      tags: [ Товары ]
+      parameters:
+        - name: id
+          in: path
+          description: 'ID товара, информацию о котором нужно получить'
+          required: true
+          schema:
+            type: string
+        - $ref: '#/components/parameters/Authorization'
+      responses:
+        '200':
+          description: 'Успешный ответ'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  name:
+                    type: string
+                  article:
+                    type: string
+                  category:
+                    type: string
+                  description:
+                    type: string
+                  imageUrl:
+                    type: string
+                  oldPrice:
+                    type: number
+                  price:
+                    type: number
+                  rating:
+                    type: number
+                  warehouseQuantity:
+                    type: integer
+                  ordersCount:
+                    type: integer
+                required:
+                  - id
+                  - name
+                  - article
+                  - category
+                  - description
+                  - imageUrl
+                  - price
+                  - rating
+                  - warehouseQuantity
+                  - ordersCount
+                example:
+                  id: ab19936e-9155-43d4-aaf7-6dacbdc668ce
+                  name: Крем для тела
+                  article: 3080366669
+                  category: Косметика
+                  description: Наверняка, вам не хватало именно этого товара в вашей коллекции. Став обладателем данной позиции вы забудете что такое скука. Берите, не пожалеете!🐈
+                  imageUrl: basket-17.wbbasket.ru/vol2679/part267903/267903164/images/big/1.webp,
+                  oldPrice: 670.1064369190367
+                  price: 416.8376802162891
+                  rating: 0.022385660727388592
+                  warehouseQuantity: 646
+                  ordersCount: 903
+        '401':
+          $ref: '#/components/responses/401'
+        '404':
+          $ref: '#/components/responses/404'
+    delete:
+      summary: Удаление товара
+      deprecated: false
+      description: 'Удалить можно только удаляемый товар, обратите внимание на поле isRemovable'
+      tags: [ Товары ]
+      parameters:
+        - name: id
+          in: path
+          description: 'ID товара, который нужно удалить'
+          required: true
+          schema:
+            type: string
+        - $ref: '#/components/parameters/Authorization'
+      responses:
+        '204':
+          description: 'Товар успешно удален'
+        '401':
+          $ref: '#/components/responses/401'
+        '403':
+          $ref: '#/components/responses/403'
+        '404':
+          $ref: '#/components/responses/404'
+      security: [ ]
+  /api/feedbacks:
+    get:
+      summary: Получение информации об отзывах о товарах
+      deprecated: false
+      description: ''
+      tags: [ Отзывы ]
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+        - name: page
+          in: query
+          description: 'Номер страницы'
+          required: false
+          schema:
+            type:
+              integer
+      responses:
+        '200':
+          description: 'Успешный ответ'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  currentPage:
+                    type: integer
+                  totalPages:
+                    type: integer
+                  Data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        name:
+                          type: string
+                        rating:
+                          type: number
+                        ordersCount:
+                          type: integer
+                        refundsPercent:
+                          type: number
+                        feedbacks:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              id:
+                                type: string
+                              buyerName:
+                                type: string
+                              rating:
+                                type: integer
+                              pros:
+                                type: string
+                              cons:
+                                type: string
+                              comment:
+                                type: string
+                              photosURL:
+                                type: array
+                                items:
+                                  type: string
+                              isRefund:
+                                type: boolean
+                            required:
+                              - id
+                              - buyerName
+                              - rating
+                              - pros
+                              - cons
+                              - comment
+                              - photosURL
+                              - isRefund
+                      required:
+                        - id
+                        - name
+                        - rating
+                        - ordersCount
+                        - refundsPercent
+                        - feedbacks
+                required:
+                  - currentPage
+                  - totalPages
+                  - Data
+                example:
+                  currentPage: 1
+                  totalPages: 2
+                  Data:
+                    - id: 6b53087b-edf9-4898-a4b1-91531dfb3dab
+                      imageUrl: basket-19.wbbasket.ru/vol3178/part317854/317854683/images/big/1.webp
+                      name: Крем для тела
+                      rating: 2.9426452906136187
+                      ordersCount: 897,
+                      refundsPercent: 45.83424644529311
+                      feedbacks:
+                        - id: 554e46dc-0986-44c7-8889-1f2d670021d1
+                          buyerName: Анна Петрова
+                          rating: 3
+                          pros: Упаковка была аккуратной и плотной
+                          cons: Цена кажется слегка завышенной
+                          comment: По сроку службы сложно сказать, попользоваться надо, отзыв будет дополняться.
+                          photosURL:
+                            - basket-17.wbbasket.ru/vol2679/part267903/267903164/images/big/1.webp
+                          isRefund: false
+        '401':
+          $ref: '#/components/responses/401'
+      security: [ ]
+  /api/balanceInfo:
+    get:
+      summary: Получение информации о балансе продавца
+      deprecated: false
+      description: ''
+      tags: [ Информация о балансе ]
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+      responses:
+        '200':
+          description: 'Успешный ответ'
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  shopId:
+                    type: string
+                  balance:
+                    type: number
+                  sales:
+                    type: number
+                  income:
+                    type: integer
+                  shopRating:
+                    type: number
+                  totalSalesCount:
+                    type: integer
+                  totalRefundsCount:
+                    type: integer
+                  salesChart:
+                    type: object
+                    properties:
+                      averageSales:
+                        type: number
+                      data:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            amount:
+                              type: integer
+                            period:
+                              type: string
+                          required:
+                            - amount
+                            - period
+                    required:
+                      - averageSales
+                      - data
+                  totalRefundsPercent:
+                    type: number
+                  monthlyRatingGrow:
+                    type: number
+                  monthlySalesGrow:
+                    type: integer
+                required:
+                  - shopId
+                  - balance
+                  - sales
+                  - income
+                  - shopRating
+                  - totalSalesCount
+                  - totalRefundsCount
+                  - salesChart
+                  - totalRefundsPercent
+                  - monthlyRatingGrow
+                  - monthlySalesGrow
+                example:
+                  "shopId": "2619f2da-b3cc-490e-81ad-105323448a78"
+                  "balance": 574229.23
+                  "sales": 97234.1
+                  "income": 85001
+                  "shopRating": 4.87
+                  "totalSalesCount": 24336
+                  "totalRefundsCount": 442
+                  "salesChart":
+                    "averageSales": 94078.03333333333
+                    "data":
+                      - "amount": 97234.1
+                        "period": "Сентябрь"
+                  "totalRefundsPercent": 1.8162394
+                  "monthlyRatingGrow": 0.04
+                  "monthlySalesGrow": 44
+        '401':
+          $ref: '#/components/responses/401'
+      security: [ ]
+components:
+  schemas:
+    MainPageProduct:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        article:
+          type: string
+        category:
+          type: string
+        imageUrl:
+          type: string
+        isRemovable:
+          type: boolean
+        oldPrice:
+          type: number
+        price:
+          type: number
+      required:
+        - id
+        - name
+        - article
+        - category
+        - imageUrl
+        - isRemovable
+        - price
+      example:
+        id: 6b53087b-edf9-4898-a4b1-91531dfb3dab
+        name: Крем для тела
+        article: 9443845766
+        category: Косметика
+        imageUrl: basket-19.wbbasket.ru/vol3178/part317854/317854683/images/big/1.webp
+        isRemovable: true,
+        price: 127.21859981085078
+  responses:
+    '400':
+      description: 'Неверный запрос, ошибка в формате поля pages'
+      content:
+        text/plain:
+          schema:
+            type: string
+          example: 'bad request: invalid page number: strconv.Atoi: parsing "sdfd": invalid syntax'
+    '401':
+      description: 'Токен доступа недействителен или не указан'
+      content:
+        text/plain:
+          schema:
+            type: string
+          example: '401 Unauthorized'
+    '403':
+      description: 'Операция запрещена'
+      content:
+        text/plain:
+          schema:
+            type: string
+          example: 'GetProductByID: forbidden: product is not removable'
+    '404':
+      description: 'Искомый объект не найден'
+      content:
+        text/plain:
+          schema:
+            type: string
+          example: 'GetProductByID: not found: product ab936e-9155-43d4-aaf7-6dacbdc668ce not found'
+  securitySchemes: { }
+  parameters:
+    Authorization:
+      name: Authorization
+      in: header
+      required: true
+      description: 'Токен доступа'
+      example: Bearer eyJhb****6mVdgYEKTJl57NQ
+      schema:
+        type: string
+    

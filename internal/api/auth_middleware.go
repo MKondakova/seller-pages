@@ -46,8 +46,8 @@ func NewAuthMiddleware(
 	}
 }
 
-func (m *AuthMiddleware) JWTAuth(next http.Handler) http.Handler {
-	return http.HandlerFunc(func(response http.ResponseWriter, request *http.Request) {
+func (m *AuthMiddleware) JWTAuth(next http.HandlerFunc) http.HandlerFunc {
+	return func(response http.ResponseWriter, request *http.Request) {
 		claims, err := m.Check(request.Header.Get("Authorization"), request.URL.Path)
 		if err != nil {
 			response.Header().Set("Content-Type", "application/json")
@@ -69,7 +69,7 @@ func (m *AuthMiddleware) JWTAuth(next http.Handler) http.Handler {
 		}
 
 		next.ServeHTTP(response, request.WithContext(ContextWithClaims(request.Context(), claims)))
-	})
+	}
 }
 
 func (m *AuthMiddleware) payload(request *http.Request) string {

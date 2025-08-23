@@ -54,14 +54,14 @@ func NewRouter(
 	productsService ProductsService,
 	balanceService BalanceService,
 	tokenService TokenService,
-	authMiddleware func(next http.Handler) http.Handler,
+	authMiddleware func(next http.HandlerFunc) http.HandlerFunc,
 	logger *zap.SugaredLogger,
 ) *Router {
 	innerRouter := http.NewServeMux()
 
 	appRouter := &Router{
 		Server: &http.Server{
-			Handler:      cors.AllowAll().Handler(authMiddleware(innerRouter)),
+			Handler:      cors.AllowAll().Handler(innerRouter),
 			ReadTimeout:  time.Duration(cfg.ReadTimeout) * time.Second,
 			WriteTimeout: time.Duration(cfg.WriteTimeout) * time.Second,
 			IdleTimeout:  time.Duration(cfg.IdleTimeout) * time.Second,
@@ -73,17 +73,20 @@ func NewRouter(
 		logger:          logger,
 	}
 
-	innerRouter.HandleFunc("POST /api/products/generate", appRouter.addProduct)
-	innerRouter.HandleFunc("GET /api/products", appRouter.getProductsList)
+	innerRouter.HandleFunc("POST /api/products/generate", authMiddleware(appRouter.addProduct))
+	innerRouter.HandleFunc("GET /api/products", authMiddleware(appRouter.getProductsList))
 
-	innerRouter.HandleFunc("GET /api/products/{id}", appRouter.getProductByID)
-	innerRouter.HandleFunc("DELETE /api/products/{id}", appRouter.deleteProductByID)
+	innerRouter.HandleFunc("GET /api/products/{id}", authMiddleware(appRouter.getProductByID))
+	innerRouter.HandleFunc("DELETE /api/products/{id}", authMiddleware(appRouter.deleteProductByID))
 
-	innerRouter.HandleFunc("GET /api/balanceInfo", appRouter.getBalanceInfo)
+	innerRouter.HandleFunc("GET /api/balanceInfo", authMiddleware(appRouter.getBalanceInfo))
 
-	innerRouter.HandleFunc("POST /api/createToken", appRouter.createToken)
-	innerRouter.HandleFunc("POST /api/createTeacherToken", appRouter.createTeacherToken)
-	innerRouter.HandleFunc("GET /api/feedbacks", appRouter.getFeedbacks)
+	innerRouter.HandleFunc("POST /api/createToken", authMiddleware(appRouter.createToken))
+	innerRouter.HandleFunc("POST /api/createTeacherToken", authMiddleware(appRouter.createTeacherToken))
+	innerRouter.HandleFunc("GET /api/feedbacks", authMiddleware(appRouter.getFeedbacks))
+	innerRouter.HandleFunc("GET /", func(writer http.ResponseWriter, request *http.Request) {
+		http.ServeFile(writer, request, "redoc-static.html")
+	})
 
 	return appRouter
 }
