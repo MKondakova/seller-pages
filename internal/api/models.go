@@ -5,3 +5,7 @@ type PaginatedResponse[T any] struct {
 	TotalPages int `json:"totalPages"`
 	Data       []T
 }
+
+type TokenResponse struct {
+	Token string `json:"token"`
+}

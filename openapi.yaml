@@ -10,7 +10,6 @@ paths:
       summary: Получение списка товаров
       description: 'Получение информации о товарах для главного экрана'
       parameters:
-        - $ref: '#/components/parameters/Authorization'
         - name: page
           in: query
           description: 'Номер страницы'
@@ -55,14 +54,13 @@ paths:
           $ref: '#/components/responses/400'
         '401':
           $ref: '#/components/responses/401'
-      security: [ ]
+      security:
+        - bearerHttpAuthentication: []
   /api/products/generate:
     post:
       summary: Создание товара
       description: 'Метод добавляет новый товар в базу и возвращает информацию о товаре для главного экрана'
       tags: [ Товары ]
-      parameters:
-        - $ref: '#/components/parameters/Authorization'
       responses:
         '200':
           description: 'Успешный ответ, товар добавлен'
@@ -82,11 +80,14 @@ paths:
           headers: { }
         '401':
           $ref: '#/components/responses/401'
-      security: [ ]
+      security:
+        - bearerHttpAuthentication: [ ]
   /api/products/{id}:
-    post:
+    get:
       summary: Получение полной информации о товаре
       tags: [ Товары ]
+      security:
+        - bearerHttpAuthentication: [ ]
       parameters:
         - name: id
           in: path
@@ -94,7 +95,6 @@ paths:
           required: true
           schema:
             type: string
-        - $ref: '#/components/parameters/Authorization'
       responses:
         '200':
           description: 'Успешный ответ'
@@ -164,7 +164,6 @@ paths:
           required: true
           schema:
             type: string
-        - $ref: '#/components/parameters/Authorization'
       responses:
         '204':
           description: 'Товар успешно удален'
@@ -174,7 +173,8 @@ paths:
           $ref: '#/components/responses/403'
         '404':
           $ref: '#/components/responses/404'
-      security: [ ]
+      security:
+        - bearerHttpAuthentication: [ ]
   /api/feedbacks:
     get:
       summary: Получение информации об отзывах о товарах
@@ -182,7 +182,6 @@ paths:
       description: ''
       tags: [ Отзывы ]
       parameters:
-        - $ref: '#/components/parameters/Authorization'
         - name: page
           in: query
           description: 'Номер страницы'
@@ -282,15 +281,16 @@ paths:
                           isRefund: false
         '401':
           $ref: '#/components/responses/401'
-      security: [ ]
+      security:
+        - bearerHttpAuthentication: [ ]
   /api/balanceInfo:
     get:
       summary: Получение информации о балансе продавца
       deprecated: false
       description: ''
       tags: [ Информация о балансе ]
-      parameters:
-        - $ref: '#/components/parameters/Authorization'
+      security:
+        - bearerHttpAuthentication: [ ]
       responses:
         '200':
           description: 'Успешный ответ'
@@ -369,7 +369,62 @@ paths:
                   "monthlySalesGrow": 44
         '401':
           $ref: '#/components/responses/401'
-      security: [ ]
+  /api/createTeacherToken:
+    post:
+      tags: [ Для преподавателей ]
+      summary: Создать токен преподавателя
+      parameters:
+        - in: query
+          name: name
+          required: true
+          schema:
+            type: string
+          description: Имя, которое будет записано внутрь токена
+      security:
+        - bearerHttpAuthentication: [ ]
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+                    example: "eyJhbGciOi..."
+        "401":
+          description: Unauthorized
+        "403":
+          description: Forbidden
+  /api/createToken:
+    post:
+      tags: [ Для преподавателей ]
+      summary: Создать токен студента
+      parameters:
+        - in: query
+          name: name
+          required: true
+          schema:
+            type: string
+          description: Имя, которое будет записано внутрь токена
+      security:
+        - bearerHttpAuthentication: [ ]
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+                    example: "eyJhbGciOi..."
+        "401":
+          description: Unauthorized
+        "403":
+          description: Forbidden
 components:
   schemas:
     MainPageProduct:
@@ -436,14 +491,11 @@ components:
           schema:
             type: string
           example: 'GetProductByID: not found: product ab936e-9155-43d4-aaf7-6dacbdc668ce not found'
-  securitySchemes: { }
-  parameters:
-    Authorization:
-      name: Authorization
+  securitySchemes:
+    bearerHttpAuthentication:
+      description: Bearer token using a JWT
+      type: http
+      scheme: Bearer
+      bearerFormat: JWT
       in: header
-      required: true
-      description: 'Токен доступа'
-      example: Bearer eyJhb****6mVdgYEKTJl57NQ
-      schema:
-        type: string
-    
+      name: Authorization

@@ -294,7 +294,18 @@ func (r *Router) createTeacherToken(writer http.ResponseWriter, request *http.Re
 		return
 	}
 
-	r.sendResponse(writer, request, http.StatusOK, []byte(token))
+	responseBody := TokenResponse{
+		Token: token,
+	}
+
+	buf, err := json.Marshal(responseBody)
+	if err != nil {
+		r.sendErrorResponse(writer, request, fmt.Errorf("%w: %w", models.ErrInternalServer, err))
+
+		return
+	}
+
+	r.sendResponse(writer, request, http.StatusOK, buf)
 }
 
 func (r *Router) getFeedbacks(writer http.ResponseWriter, request *http.Request) {

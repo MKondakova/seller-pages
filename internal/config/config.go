@@ -49,8 +49,7 @@ func GetConfig(logger *zap.SugaredLogger) (*Config, error) {
 			IdleTimeout:          60,
 			MaxRequestBodySizeMb: 1,
 		},
-		CreatedTokensPath: "data/created_tokens.json",
-		RevokedTokens:     []string{},
+		CreatedTokensPath: "data/createdTokens.csv",
 	}
 
 	products, err := getInitData[models.Product]("data/products.json", logger)
@@ -60,7 +59,7 @@ func GetConfig(logger *zap.SugaredLogger) (*Config, error) {
 
 	cfg.InitialProductsData = products
 
-	bannedTokens, err := getInitData[string]("data/bannedTokens.json", logger)
+	bannedTokens, err := getInitData[string]("data/blocked_tokens.txt", logger)
 	if err != nil {
 		return nil, fmt.Errorf("can't get banned tokens: %w", err)
 	}
