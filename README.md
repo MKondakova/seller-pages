@@ -25,7 +25,7 @@
    docker run --env-file ./.env \
       -v "data:/root/data" \
       --restart always \
-      -p 80:8082 \
+      -p 8080:8082 \
       -d --name seller-pages-app seller-pages-image:latest
    ```
 
